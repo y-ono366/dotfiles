@@ -55,6 +55,8 @@ repo = 'itchyny/lightline.vim'
 [[plugins]]
 repo = 'Shougo/vimproc'
 
-
 [[plugins]]
 repo = 'rking/ag.vim'
+
+[[plugins]]
+repo = 'othree/yajs.vim'
