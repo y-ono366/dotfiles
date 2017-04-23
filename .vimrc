@@ -48,6 +48,7 @@ let g:unite_enable_smart_case = 1
 :command Dd %s/ *$//
 :command Do DiffOrig
 
+
 " NERDTreeの設定
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -63,12 +64,13 @@ imap [ []<LEFT>
 imap ( ()<LEFT>
 nmap j <Plug>(accelerated_jk_gj_position)
 nmap k <Plug>(accelerated_jk_gk_position)
+nmap W %
 "キー設定
 noremap <C-i> <esc>
 noremap! <C-i> <esc>
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 " NERDTreeショートカット
-map <C-n> <plug>NERDTreeTabsToggle<CR>
+nmap <C-n> <plug>NERDTreeTabsToggle<CR>
 
 " Unite
 let g:unite_enable_start_insert=1
