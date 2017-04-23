@@ -45,6 +45,8 @@ let g:unite_enable_smart_case = 1
 :command Tr NERDTree
 :command Ss split
 :command Sv vsplit
+:command Dd %s/ *$//
+:command Do DiffOrig
 
 " NERDTreeの設定
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
