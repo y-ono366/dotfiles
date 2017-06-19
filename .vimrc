@@ -32,7 +32,7 @@ let g:unite_enable_smart_case = 1
 " NERDTreeの設定
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Jsファイルの場合設定変更
-autocmd filetype coffee,javascript setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
+" autocmd filetype coffee,javascript setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 
 " QuickRun
@@ -64,7 +64,10 @@ noremap! <C-i> <esc>
 
 "---------- GUI----------
 " スキーマ
-colorscheme twilight
+colorscheme gruvbox
+let g:gruvbox_underline = 1
+let g:gruvbox_contrast_dark = 'medium'
+set background=dark
 set lines=55
 set columns=180
 set selection=inclusive
