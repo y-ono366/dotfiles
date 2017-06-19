@@ -60,3 +60,9 @@ repo = 'rking/ag.vim'
 
 [[plugins]]
 repo = 'othree/yajs.vim'
+
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
