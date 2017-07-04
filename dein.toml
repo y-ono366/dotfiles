@@ -39,3 +39,7 @@ repo = 'thinca/vim-quickrun'
 
 [[plugins]]
 repo = 'dhruvasagar/vim-table-mode'
+
+[[plugins]]
+repo = 'Shougo/neocomplcache.vim'
+
