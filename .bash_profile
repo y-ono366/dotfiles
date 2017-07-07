@@ -1,16 +1,16 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
-export PATH=$HOME/.rbenv/bin:$PATH
-eval "$(rbenv init -)"
-export PATH="$HOME/.phpenv/bin:$PATH"
-eval "$(phpenv init -)"
+# export PATH=$HOME/.rbenv/bin:$PATH
+# eval "$(rbenv init -)"
+# export PATH="$HOME/.phpenv/bin:$PATH"
+# eval "$(phpenv init -)"
 export LSCOLORS=gxfxcxdxbxegedabagacad
-PATH=$PATH:~/.composer/vendor/bin
+# PATH=$PATH:~/.composer/vendor/bin
 # Alias設定
 alias ll='ls -la'
 alias ls='ls -G'
-alias vim='gvim --remote-tab-silent'
-alias t-kill='tmux kill-server'
+# alias vim='gvim --remote-tab-silent'
+# alias t-kill='tmux kill-server'
 
 function is_exists() { type "$1" >/dev/null 2>&1; return $?; }
 function is_osx() { [[ $OSTYPE == darwin* ]]; }

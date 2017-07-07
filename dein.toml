@@ -29,9 +29,6 @@ repo = 'Shougo/unite.vim'
 repo = 'gregsexton/MatchTag'
 
 [[plugins]]
-repo = 'Shougo/vimproc'
-
-[[plugins]]
 repo = 'othree/yajs.vim'
 
 [[plugins]]
@@ -41,5 +38,5 @@ repo = 'thinca/vim-quickrun'
 repo = 'dhruvasagar/vim-table-mode'
 
 [[plugins]]
-repo = 'Shougo/neocomplcache.vim'
-
+repo = 'Shougo/vimproc'
+build = 'make'
