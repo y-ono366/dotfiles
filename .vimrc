@@ -187,3 +187,4 @@ set tabstop=4
 set shiftwidth=4
 
 filetype off
+set clipboard=unnamed,autoselect

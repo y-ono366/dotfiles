@@ -10,7 +10,7 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 alias ll='ls -la'
 alias ls='ls -G'
 # alias vim='gvim --remote-tab-silent'
-# alias t-kill='tmux kill-server'
+alias t-kill='tmux kill-server'
 
 function is_exists() { type "$1" >/dev/null 2>&1; return $?; }
 function is_osx() { [[ $OSTYPE == darwin* ]]; }
