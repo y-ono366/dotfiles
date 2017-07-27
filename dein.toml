@@ -40,3 +40,15 @@ repo = 'dhruvasagar/vim-table-mode'
 [[plugins]]
 repo = 'Shougo/vimproc'
 build = 'make'
+
+[[plugins]]
+repo = 'scrooloose/syntastic'
+
+[[plugins]]
+repo = 'myhere/vim-nodejs-complete'
+
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+
+[[plugins]]
+repo = 'moll/vim-node'

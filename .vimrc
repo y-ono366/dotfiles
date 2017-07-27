@@ -40,9 +40,7 @@ let g:unite_enable_smart_case = 1
 
 " NERDTreeの設定
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-" Jsファイルの場合設定変更
-" autocmd filetype coffee,javascript setlocal shiftwidth=4 softtabstop=4 tabstop=4 expandtab
-autocmd BufRead,BufNewFile *.es6 setfiletype javascript
+
 
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
@@ -92,6 +90,12 @@ inoreabbrev <expr> __
           \ <SID>isAtStartOfLine('__') ?
           \ '<c-o>:silent! TableModeDisable<cr>' : '__'
 
+autocmd User Node
+  \ if &filetype == "javascript" |
+  \   nmap <buffer> <C-w>f <Plug>NodeVSplitGotoFile |
+  \   nmap <buffer> <C-w><C-f> <Plug>NodeVSplitGotoFile |
+  \ endif
+
 " QuickRun
 let g:quickrun_config = {
  \ "javascript": {
@@ -100,6 +104,30 @@ let g:quickrun_config = {
  \   }
  \ }
 let g:quickrun_config={'*': {'split': ''}}
+
+" eslint syntastic
+let g:syntastic_check_on_open=0 "ファイルを開いたときはチェックしない
+let g:syntastic_check_on_save=1 "保存時にはチェック
+let g:syntastic_check_on_wq = 0 " wqではチェックしない
+let g:syntastic_auto_loc_list=1 "エラーがあったら自動でロケーションリストを開く
+let g:syntastic_loc_list_height=6 "エラー表示ウィンドウの高さ
+set statusline+=%#warningmsg# "エラーメッセージの書式
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_javascript_checkers = ['eslint'] "ESLintを使う
+let g:syntastic_mode_map = {
+    \ 'mode': 'active',
+    \ 'active_filetypes': ['javascript'],
+    \ 'passive_filetypes': []
+    \ }
+
+" node js 補完
+autocmd FileType javascript setlocal omnifunc=nodejscomplete#CompleteJS
+if !exists('g:neocomplcache_omni_functions')
+  let g:neocomplcache_omni_functions = {}
+endif
+let g:neocomplcache_omni_functions.javascript = 'nodejscomplete#CompleteJS'
+let g:node_usejscomplete = 1
 
 " Alias
 :command Tr NERDTree
@@ -113,11 +141,14 @@ let g:quickrun_config={'*': {'split': ''}}
 imap { {}<LEFT>
 imap [ []<LEFT>
 imap ( ()<LEFT>
+" node 補完
+imap <C-f> <C-x><C-o>
 nmap j <Plug>(accelerated_jk_gj_position)
 nmap k <Plug>(accelerated_jk_gk_position)
 nmap W %
 noremap <C-i> <esc>
 noremap! <C-i> <esc>
+
 
 "---------- GUI----------
 " スキーマ
@@ -185,6 +216,11 @@ set expandtab
 set tabstop=4
 " 自動インデント
 set shiftwidth=4
+" autoindent
+set autoindent
 
 filetype off
 set clipboard=unnamed,autoselect
+
+" syntax on
+syntax on
