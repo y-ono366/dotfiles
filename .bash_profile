@@ -7,8 +7,9 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 export LSCOLORS=gxfxcxdxbxegedabagacad
 # PATH=$PATH:~/.composer/vendor/bin
 # Alias設定
-alias ll='ls -la'
+alias ll='ls -lah'
 alias ls='ls -G'
+alias vi='vim'
 # alias vim='gvim --remote-tab-silent'
 alias t-kill='tmux kill-server'
 

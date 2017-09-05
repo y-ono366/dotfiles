@@ -146,6 +146,8 @@ imap <C-f> <C-x><C-o>
 nmap j <Plug>(accelerated_jk_gj_position)
 nmap k <Plug>(accelerated_jk_gk_position)
 nmap W %
+nmap <C-K> <Plug>(caw:i:toggle)
+vmap <C-K> <Plug>(caw:i:toggle)
 noremap <C-i> <esc>
 noremap! <C-i> <esc>
 
