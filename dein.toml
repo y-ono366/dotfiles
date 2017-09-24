@@ -14,9 +14,6 @@ repo = 'othree/html5.vim'
 repo = 'hail2u/vim-css3-syntax'
 
 [[plugins]]
-repo = 'jacoborus/tender.vim'
-
-[[plugins]]
 repo = 'morhetz/gruvbox'
 
 [[plugins]]
@@ -52,6 +49,3 @@ repo = 'pangloss/vim-javascript'
 
 [[plugins]]
 repo = 'moll/vim-node'
-
-[[plugins]]
-repo = 'tyru/caw.vim'

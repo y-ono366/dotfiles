@@ -1,5 +1,6 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=/Applications/MacVim.app/Contents/bin:$PATH
 # export PATH=$HOME/.rbenv/bin:$PATH
 # eval "$(rbenv init -)"
 # export PATH="$HOME/.phpenv/bin:$PATH"
@@ -10,6 +11,8 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 alias ll='ls -lah'
 alias ls='ls -G'
 alias vi='vim'
+alias twl='tw -tl -id'
+alias tw='tw -id'
 # alias vim='gvim --remote-tab-silent'
 alias t-kill='tmux kill-server'
 

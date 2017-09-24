@@ -1,7 +1,7 @@
 [user]
-	emai = o.yusuke.od@gmail.com
+	emai = y.ono.varial@gmail.com
 	name = Yusuke Ono
-	email = o.yusuke.od@gmail.com
+	email = y.ono.varial@gmail.com
 
 [alias]
     gr =  log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
@@ -11,3 +11,5 @@
     br = branch
     ch = checkout
     reseth = reset --hard
+[core]
+    editor = "mvim -f"
