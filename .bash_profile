@@ -30,11 +30,17 @@ function tmux_automatically_attach_session()
         ! is_exists 'tmux' && return 1
 
         if is_tmux_runnning; then
-            echo "${fg_bold[red]} _____ __  __ _   ___  __ ${reset_color}"
-            echo "${fg_bold[red]}|_   _|  \/  | | | \ \/ / ${reset_color}"
-            echo "${fg_bold[red]}  | | | |\/| | | | |\  /  ${reset_color}"
-            echo "${fg_bold[red]}  | | | |  | | |_| |/  \  ${reset_color}"
-            echo "${fg_bold[red]}  |_| |_|  |_|\___//_/\_\ ${reset_color}"
+            echo "${fg_bold[red]} ______ _   _   ___  _   _    _   _      _      _______ __    ____   ____    __     ${reset_color}"
+            echo "${fg_bold[red]}|  ____| | | |/ ___|| | / /  | | |  \   | |    |__   __|  \  /  | | | |\ \  / /     ${reset_color}"
+            echo "${fg_bold[red]}| |____| | | | |    | |/ /   | | | \ \  | |       | |  |   \/   | | | | \ \/ /      ${reset_color}"
+            echo "${fg_bold[red]}|  ____| | | | |    |   |    | | | |\ \ | |       | |  | |\  /| | | | |  \  /       ${reset_color}"
+            echo "${fg_bold[red]}| |    | |_| | |___ | |\ \   | | | | \ \| |       | |  | | \/ | | |_| | / /\ \      ${reset_color}"
+            echo "${fg_bold[red]}|_|     \___/ \____||_| \_\  |_| |_|  \ __|       |_|  |_|    |_|\___/ /_/  \_\     ${reset_color}"
+#            echo "${fg_bold[red]} _____ __  __ _   __  __  ${reset_color}"
+#            echo "${fg_bold[red]}|_   _|  \/  | | | \ \/ / ${reset_color}"
+#            echo "${fg_bold[red]}  | | | |\/| | | | |\  /  ${reset_color}"
+#            echo "${fg_bold[red]}  | | | |  | | |_| |/  \  ${reset_color}"
+#            echo "${fg_bold[red]}  |_| |_|  |_|\___//_/\_\ ${reset_color}"
         elif is_screen_running; then
             echo "This is on screen."
         fi
