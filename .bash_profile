@@ -30,8 +30,8 @@ function tmux_automatically_attach_session()
         ! is_exists 'tmux' && return 1
 
         if is_tmux_runnning; then
-            echo "${fg_bold[red]} ______ _   _   ___  _   _    _   _      _      _______ __    ____   ____    __     ${reset_color}"
-            echo "${fg_bold[red]}|  ____| | | |/ ___|| | / /  | | |  \   | |    |__   __|  \  /  | | | |\ \  / /     ${reset_color}"
+            echo "${fg_bold[red]} ______ _   _   ___  _   _    _   _      _   _  _______ __    ____   ____    __     ${reset_color}"
+            echo "${fg_bold[red]}|  ____| | | |/ ___|| | / /  | | |  \   | | |/ |__   __|  \  /  | | | |\ \  / /     ${reset_color}"
             echo "${fg_bold[red]}| |____| | | | |    | |/ /   | | | \ \  | |       | |  |   \/   | | | | \ \/ /      ${reset_color}"
             echo "${fg_bold[red]}|  ____| | | | |    |   |    | | | |\ \ | |       | |  | |\  /| | | | |  \  /       ${reset_color}"
             echo "${fg_bold[red]}| |    | |_| | |___ | |\ \   | | | | \ \| |       | |  | | \/ | | |_| | / /\ \      ${reset_color}"
