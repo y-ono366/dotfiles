@@ -10,7 +10,6 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 # Alias設定
 alias ll='ls -lah'
 alias ls='ls -G'
-alias vi='vim'
 alias twl='tw -tl -id'
 alias tw='tw -id'
 # alias vim='gvim --remote-tab-silent'

@@ -89,9 +89,8 @@ noremap! <C-i> <esc>
 
 "---------- GUI----------
 " スキーマ
+let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox
-let g:gruvbox_underline = 1
-let g:gruvbox_contrast_dark = 'medium'
 set background=dark
 set lines=55
 set columns=180
