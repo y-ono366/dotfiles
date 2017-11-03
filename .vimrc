@@ -17,15 +17,6 @@ autocmd vimenter * syntax on
   let s:toml      = g:rc_dir . '/dein.toml'
   let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
   call dein#load_toml(s:toml,      {'lazy': 0})
-  call dein#add('Shougo/vimproc.vim', {
-      \ 'build': {
-      \     'windows' : 'tools\\update-dll-mingw',
-      \     'cygwin'  : 'make -f make_cygwin.mak',
-      \     'mac'     : 'make -f make_mac.mak',
-      \     'linux'   : 'make',
-      \     'unix'    : 'gmake',
-      \    },
-      \ })
 " もし、未インストールものものがあったらインストール
 if dein#check_install()
   call dein#install()
@@ -41,39 +32,8 @@ let g:unite_enable_smart_case = 1
 " NERDTreeの設定
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
-" " Use neocomplcache.
-" let g:neocomplcache_enable_at_startup = 1
-" " Use smartcase.
-" let g:neocomplcache_enable_smart_case = 1
-" " Set minimum syntax keyword length.
-" let g:neocomplcache_min_syntax_length = 3
-" let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
-" 
-" " Define dictionary.
-" let g:neocomplcache_dictionary_filetype_lists = {
-"     \ 'default' : ''
-"     \ }
-" 
-" " Plugin key-mappings.
-" inoremap <expr><C-g>     neocomplcache#undo_completion()
-" inoremap <expr><C-l>     neocomplcache#complete_common_string()
-" 
-" " Recommended key-mappings.
-" " <CR>: close popup and save indent.
-" inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-" function! s:my_cr_function()
-"   return neocomplcache#smart_close_popup() . "\<CR>"
-" endfunction
-" " <TAB>: completion.
-" inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" " <C-h>, <BS>: close popup and delete backword char.
-" inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
-" inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
-" inoremap <expr><C-y>  neocomplcache#close_popup()
-" inoremap <expr><C-e>  neocomplcache#cancel_popup()
 
 " vim-table-mode
 function! s:isAtStartOfLine(mapping)
@@ -90,12 +50,6 @@ inoreabbrev <expr> __
           \ <SID>isAtStartOfLine('__') ?
           \ '<c-o>:silent! TableModeDisable<cr>' : '__'
 
-autocmd User Node
-  \ if &filetype == "javascript" |
-  \   nmap <buffer> <C-w>f <Plug>NodeVSplitGotoFile |
-  \   nmap <buffer> <C-w><C-f> <Plug>NodeVSplitGotoFile |
-  \ endif
-
 " QuickRun
 let g:quickrun_config = {
  \ "javascript": {
@@ -105,29 +59,14 @@ let g:quickrun_config = {
  \ }
 let g:quickrun_config={'*': {'split': ''}}
 
-" eslint syntastic
-let g:syntastic_check_on_open=0 "ファイルを開いたときはチェックしない
-let g:syntastic_check_on_save=1 "保存時にはチェック
-let g:syntastic_check_on_wq = 0 " wqではチェックしない
-let g:syntastic_auto_loc_list=1 "エラーがあったら自動でロケーションリストを開く
-let g:syntastic_loc_list_height=6 "エラー表示ウィンドウの高さ
-set statusline+=%#warningmsg# "エラーメッセージの書式
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_javascript_checkers = ['eslint'] "ESLintを使う
-let g:syntastic_mode_map = {
-    \ 'mode': 'active',
-    \ 'active_filetypes': ['javascript'],
-    \ 'passive_filetypes': []
-    \ }
-
-" node js 補完
-autocmd FileType javascript setlocal omnifunc=nodejscomplete#CompleteJS
-if !exists('g:neocomplcache_omni_functions')
-  let g:neocomplcache_omni_functions = {}
+" CtrlP
+if executable('ag')
+  let g:ctrlp_use_caching=0
+  let g:ctrlp_user_command='ag %s -i --nocolor --nogroup -g ""'
 endif
-let g:neocomplcache_omni_functions.javascript = 'nodejscomplete#CompleteJS'
-let g:node_usejscomplete = 1
+let g:ctrlp_lazy_update = 1
+let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
+let g:ctrlp_clear_cache_on_exit = 0
 
 " Alias
 :command Tr NERDTree
@@ -141,13 +80,9 @@ let g:node_usejscomplete = 1
 imap { {}<LEFT>
 imap [ []<LEFT>
 imap ( ()<LEFT>
-" node 補完
-imap <C-f> <C-x><C-o>
 nmap j <Plug>(accelerated_jk_gj_position)
 nmap k <Plug>(accelerated_jk_gk_position)
 nmap W %
-nmap <C-K> <Plug>(caw:i:toggle)
-vmap <C-K> <Plug>(caw:i:toggle)
 noremap <C-i> <esc>
 noremap! <C-i> <esc>
 
@@ -215,14 +150,15 @@ set list
 
 " TABキーを押した際にタブ文字の代わりにスペースを入れる
 set expandtab
-set tabstop=4
+set tabstop=2
 " 自動インデント
-set shiftwidth=4
+set shiftwidth=2
 " autoindent
 set autoindent
 
 filetype off
 set clipboard=unnamed,autoselect
-
+" undoファイル無効化
+set noundofile
 " syntax on
 syntax on
