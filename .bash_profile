@@ -12,6 +12,8 @@ alias ll='ls -lah'
 alias ls='ls -G'
 alias twl='tw -tl -id'
 alias tw='tw -id'
+alias doc='docker ps'
+
 # alias vim='gvim --remote-tab-silent'
 alias t-kill='tmux kill-server'
 
