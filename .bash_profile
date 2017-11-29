@@ -1,6 +1,7 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=/Applications/MacVim.app/Contents/bin:$PATH
+export PATH=$PATH:./node_modules/.bin
 # export PATH=$HOME/.rbenv/bin:$PATH
 # eval "$(rbenv init -)"
 # export PATH="$HOME/.phpenv/bin:$PATH"
@@ -12,7 +13,10 @@ alias ll='ls -lah'
 alias ls='ls -G'
 alias twl='tw -tl -id'
 alias tw='tw -id'
-alias doc='docker ps'
+alias doc='docker'
+alias grep='grep --color=auto'
+alias ck='pgrep Chrome | xargs kill'
+alias tx='exit'
 
 # alias vim='gvim --remote-tab-silent'
 alias t-kill='tmux kill-server'
