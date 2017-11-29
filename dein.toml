@@ -52,3 +52,8 @@ repo = 'rking/ag.vim'
 ### コメントアウト
 [[plugins]]
 repo = 'tomtom/tcomment_vim'
+
+### PUG syntax
+[[plugins]]
+repo = 'digitaltoad/vim-pug'
+on_ft = ['pug']
