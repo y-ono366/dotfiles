@@ -21,10 +21,11 @@ alias grep='grep --color=auto'
 alias ck='pgrep Chrome | xargs kill'
 alias tx='exit'
 alias doco='docker-compose'
+alias javac='java -jar'
 
 # alias vim='gvim --remote-tab-silent'
 alias t-kill='tmux kill-server'
-
+function kotc(){ kotlinc $1 -include-runtime -d ${1//.kt/.jar};}
 function is_exists() { type "$1" >/dev/null 2>&1; return $?; }
 function is_osx() { [[ $OSTYPE == darwin* ]]; }
 function is_screen_running() { [ ! -z "$STY" ]; }
