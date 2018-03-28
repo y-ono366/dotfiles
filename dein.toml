@@ -57,3 +57,7 @@ repo = 'tomtom/tcomment_vim'
 [[plugins]]
 repo = 'digitaltoad/vim-pug'
 on_ft = ['pug']
+
+[[plugins]]
+repo = 'mattn/emmet-vim'
+on_ft = ['html']
