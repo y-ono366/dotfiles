@@ -17,6 +17,7 @@ alias doc='docker'
 alias grep='grep --color=auto'
 alias ck='pgrep Chrome | xargs kill'
 alias tx='exit'
+alias doco='docker-compose'
 
 # alias vim='gvim --remote-tab-silent'
 alias t-kill='tmux kill-server'
