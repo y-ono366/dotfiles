@@ -1,13 +1,12 @@
 [user]
 	emai = y.ono.varial@gmail.com
 	name = Yusuke Ono
-	email = y.ono.varial@gmail.com
 
 [alias]
     gr =  log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
     st = status
     cm = commit
-    difff = diff --word-diff
+    df = diff --word-diff
     br = branch
     one = log --oneline
     ch = checkout
@@ -15,5 +14,6 @@
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     amd = commit --amend
+    cp = cherry-pick
 [core]
     editor = "mvim -f"
