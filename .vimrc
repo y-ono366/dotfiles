@@ -12,20 +12,16 @@ autocmd vimenter * syntax on
   call dein#begin(s:dein_dir)
   let g:rc_dir    = expand('~/dotfiles/vim/etc/modules/')
   let s:toml      = g:rc_dir . '/dein.toml'
-  let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
   call dein#load_toml(s:toml,      {'lazy': 0})
 " もし、未インストールものものがあったらインストール
 if dein#check_install()
   call dein#install()
 endif
 
+for file in split(glob('~/dotfiles/vim/etc/**/*.vim'), '\n')
+    exe 'source' file
+endfor
 
-:so $HOME/dotfiles/vim/etc/config/base.vim
-:so $HOME/dotfiles/vim/etc/config/alias.vim
-:so $HOME/dotfiles/vim/etc/config/keymaps.vim
-:so $HOME/dotfiles/vim/etc/modules/ag.vim
-:so $HOME/dotfiles/vim/etc/modules/nerdtree.vim
-:so $HOME/dotfiles/vim/etc/modules/quickrun.vim
-:so $HOME/dotfiles/vim/etc/modules/unite.vim
-:so $HOME/dotfiles/vim/etc/modules/table-mode.vim
-:so $HOME/dotfiles/vim/src/script.vim
+for script in split(glob('~/dotfiles/vim/src/*.vim'), '\n')
+    exe 'source' script
+endfor
