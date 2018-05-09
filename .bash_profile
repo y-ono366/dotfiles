@@ -2,6 +2,7 @@ export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=/Applications/MacVim.app/Contents/bin:$PATH
 export PATH=$PATH:./node_modules/.bin
+export PATH=/Library/Frameworks/Python.framework/Versions/3.6/bin:$PATH
 # export PATH=$HOME/.rbenv/bin:$PATH
 # eval "$(rbenv init -)"
 # export PATH="$HOME/.phpenv/bin:$PATH"
