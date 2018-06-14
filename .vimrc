@@ -13,7 +13,6 @@ autocmd vimenter * syntax on
   let g:rc_dir    = expand('~/dotfiles/vim/etc/modules/')
   let s:toml      = g:rc_dir . '/dein.toml'
   call dein#load_toml(s:toml,      {'lazy': 0})
-" もし、未インストールものものがあったらインストール
 if dein#check_install()
   call dein#install()
 endif
