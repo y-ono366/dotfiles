@@ -64,3 +64,6 @@ on_ft = ['html']
 
 [[plugins]]
 repo = 'twitvim/twitvim'
+
+[[plugins]]
+repo = 'udalov/kotlin-vim'

@@ -3,6 +3,8 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=/Applications/MacVim.app/Contents/bin:$PATH
 export PATH=$PATH:./node_modules/.bin
 export PATH=/Library/Frameworks/Python.framework/Versions/3.6/bin:$PATH
+export PATH=$HOME/.jenv/bin:$PATH
+eval "$(jenv init -)"
 # export PATH=$HOME/.rbenv/bin:$PATH
 # eval "$(rbenv init -)"
 # export PATH="$HOME/.phpenv/bin:$PATH"
@@ -85,3 +87,7 @@ function tmux_automatically_attach_session()
     fi
 }
 tmux_automatically_attach_session
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/YusukeOno/.sdkman"
+[[ -s "/Users/YusukeOno/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/YusukeOno/.sdkman/bin/sdkman-init.sh"
