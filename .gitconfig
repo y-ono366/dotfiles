@@ -15,5 +15,3 @@
     lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     amd = commit --amend
     cp = cherry-pick
-[core]
-    editor = "mvim -f"
