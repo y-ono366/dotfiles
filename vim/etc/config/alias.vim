@@ -10,3 +10,4 @@
 :command Ntl NextTwitter
 :command Ptl PreviousTwitter
 :command Nw rightbelow vne
+:command Nm :%s/^/\=line(".")
