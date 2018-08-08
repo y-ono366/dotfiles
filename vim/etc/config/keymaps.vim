@@ -9,3 +9,6 @@ noremap! <C-i> <esc>
 noremap <C-h> :s/_\(.\)/\u\1/g
 noremap <C-n> :s/\<\@!\([A-Z]\)/\_\l\1/g
 noremap <C-u> :s/\(\w\+\)/'\1'/g
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>r :call Replace()<CR>
+nnoremap <Leader>t :NERDTree<CR>
