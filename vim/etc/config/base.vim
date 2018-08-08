@@ -60,3 +60,5 @@ set clipboard+=unnamedplus,unnamed,autoselect
 set noundofile
 " syntax on
 syntax on
+
+let mapleader = "\<Space>"
