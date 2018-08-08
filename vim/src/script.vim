@@ -3,5 +3,6 @@ function! Rline(start,end)
 endfunction
 
 function! Replace()
-    execute "normal hplvwhhx"
+    execute 'normal h"bplvwhhx'
 endfunction
+
