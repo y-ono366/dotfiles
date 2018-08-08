@@ -67,3 +67,10 @@ repo = 'twitvim/twitvim'
 
 [[plugins]]
 repo = 'udalov/kotlin-vim'
+
+### git command
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'w0rp/ale'
