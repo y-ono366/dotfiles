@@ -72,5 +72,9 @@ repo = 'udalov/kotlin-vim'
 [[plugins]]
 repo = 'tpope/vim-fugitive'
 
+### 非同期syntax check
 [[plugins]]
 repo = 'w0rp/ale'
+
+[[plugins]]
+repo = 'terryma/vim-multiple-cursors'
