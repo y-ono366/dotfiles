@@ -4,7 +4,7 @@ function! RReplace()
 endfunction
 
 function! Replace()
-    execute 'normal hhplvexb'
+    execute 'normal vepb'
 endfunction
 
 function! Rline(start,end)
