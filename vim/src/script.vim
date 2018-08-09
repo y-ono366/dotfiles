@@ -1,8 +1,11 @@
 " bにyankしたテキストと入れ替える
-function! Replace()
-    execute 'normal h"bplvwhhxx'
+function! RReplace()
+    execute 'normal h"bplvwhhxxb'
 endfunction
 
+function! Replace()
+    execute 'normal hhplvexb'
+endfunction
 
 function! Rline(start,end)
   call setline(1,range(a:start,a:end))
