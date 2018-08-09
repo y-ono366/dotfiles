@@ -10,8 +10,9 @@ noremap <C-h> :s/_\(.\)/\u\1/g
 noremap <C-j> :s/\<\@!\([A-Z]\)/\_\l\1/g
 noremap <C-u> :s/\(\w\+\)/'\1'/g
 nnoremap <Leader>w :w<CR>
-nnoremap <Leader>rr :call RReplace()<CR>
-nnoremap <Leader>r :call Replace()<CR>
-nnoremap <Leader>y :call Cpword()<CR>
+nnoremap <Leader>rr h"bplvwhhxxb
+nnoremap <Leader>r vepb
+" nnoremap <Leader>r ciw<C-r>0<ESC>b
+nnoremap <Leader>y vey
 nnoremap <Leader>t :NERDTree<CR>
 nnoremap <Leader>qq :qa!<CR>
