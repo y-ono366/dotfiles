@@ -77,3 +77,7 @@ tmux_automatically_attach_session
 if [ -f ~/.bashrc ] ; then
 . ~/.bashrc
 fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/yusukeohno/.sdkman"
+[[ -s "/Users/yusukeohno/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/yusukeohno/.sdkman/bin/sdkman-init.sh"
