@@ -11,20 +11,6 @@ eval "$(jenv init -)"
 # eval "$(phpenv init -)"
 export LSCOLORS=gxfxcxdxbxegedabagacad
 # PATH=$PATH:~/.composer/vendor/bin
-# Alias設定
-alias ll='ls -lah'
-alias ls='ls -G'
-alias twl='tw -tl -id'
-alias tw='tw -id'
-alias doc='docker'
-alias grep='grep --color=auto'
-alias ck='pgrep Chrome | xargs kill'
-alias tx='exit'
-alias doco='docker-compose'
-alias javac='java -jar'
-
-# alias vim='gvim --remote-tab-silent'
-alias t-kill='tmux kill-server'
 function kotc(){ kotlinc $1 -include-runtime -d ${1//.kt/.jar};}
 function is_exists() { type "$1" >/dev/null 2>&1; return $?; }
 function is_osx() { [[ $OSTYPE == darwin* ]]; }
@@ -88,7 +74,6 @@ function tmux_automatically_attach_session()
     fi
 }
 tmux_automatically_attach_session
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/YusukeOno/.sdkman"
-[[ -s "/Users/YusukeOno/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/YusukeOno/.sdkman/bin/sdkman-init.sh"
+if [ -f ~/.bashrc ] ; then
+. ~/.bashrc
+fi
