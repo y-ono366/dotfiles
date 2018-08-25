@@ -1,9 +1,14 @@
-if [ -f ~/.bashrc ]; then
-    . ~/.bashrc
-fi
+# Alias設定
+alias ll='ls -lah'
+alias ls='ls -G'
+alias twl='tw -tl -id'
+alias tw='tw -id'
+alias doc='docker'
+alias grep='grep --color=auto'
+alias ck='pgrep Chrome | xargs kill'
+alias tx='exit'
+alias doco='docker-compose'
+alias javac='java -jar'
 
-PATH=$HOME/.nodebrew/current/bin:$PATH
-export PATH=$HOME/.rbenv/bin:$PATH
-eval "$(rbenv init -)"
-export PATH="$HOME/.phpenv/bin:$PATH"
-eval "$(phpenv init -)"
+# alias vim='gvim --remote-tab-silent'
+alias t-kill='tmux kill-server'
