@@ -1,8 +1,6 @@
 imap { {}<LEFT>
 imap [ []<LEFT>
 imap ( ()<LEFT>
-nmap j <Plug>(accelerated_jk_gj_position)
-nmap k <Plug>(accelerated_jk_gk_position)
 nmap W %
 noremap <C-i> <esc>
 noremap! <C-i> <esc>
@@ -14,5 +12,4 @@ nnoremap <Leader>R h"bplvwhhxxb
 nnoremap <Leader>r vepb
 " nnoremap <Leader>r ciw<C-r>0<ESC>b
 nnoremap <Leader>y vey
-nnoremap <Leader>t :NERDTree<CR>
 nnoremap <Leader>qq :qa!<CR>
