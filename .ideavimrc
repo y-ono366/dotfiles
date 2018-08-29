@@ -1,2 +1,3 @@
 source ~/dotfiles/vim/etc/config/base.vim
 source ~/dotfiles/vim/etc/config/keymaps.vim
+inoremap <C-i> <ESC>
