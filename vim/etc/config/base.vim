@@ -55,7 +55,7 @@ set shiftwidth=2
 " autoindent
 set autoindent
 filetype off
-set clipboard+=unnamedplus,unnamed
+set clipboard+=unnamedplus,unnamed,autoselect
 " undoファイル無効化
 set noundofile
 " syntax on
