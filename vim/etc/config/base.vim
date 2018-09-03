@@ -47,14 +47,14 @@ set hlsearch
 " 空白文字の可視化
 set list
 
+filetype on
 " TABキーを押した際にタブ文字の代わりにスペースを入れる
 set expandtab
-set tabstop=2
+set tabstop=4
 " 自動インデント
-set shiftwidth=2
+set shiftwidth=4
 " autoindent
 set autoindent
-filetype off
 set clipboard+=unnamedplus,unnamed,autoselect
 " undoファイル無効化
 set noundofile
@@ -62,3 +62,8 @@ set noundofile
 syntax on
 
 let mapleader = "\<Space>"
+augroup fileTypeIndent
+    autocmd!
+    autocmd BufNewFile,BufRead *.go  setlocal noexpandtab tabstop=2 shiftwidth=2
+    autocmd BufNewFile,BufRead *.js  setlocal tabstop=2 shiftwidth=2
+augroup END
