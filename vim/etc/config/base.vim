@@ -64,6 +64,6 @@ syntax on
 let mapleader = "\<Space>"
 augroup fileTypeIndent
     autocmd!
-    autocmd BufNewFile,BufRead *.go  setlocal noexpandtab tabstop=2 shiftwidth=2
+    autocmd BufNewFile,BufRead *.go  setlocal noexpandtab tabstop=4 shiftwidth=4
     autocmd BufNewFile,BufRead *.js  setlocal tabstop=2 shiftwidth=2
 augroup END
