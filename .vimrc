@@ -17,10 +17,6 @@ if dein#check_install()
   call dein#install()
 endif
 
-for file in split(glob('~/dotfiles/vim/etc/**/*.vim'), '\n')
+for file in split(glob('~/dotfiles/vim/**/*.vim'), '\n')
     exe 'source' file
-endfor
-
-for script in split(glob('~/dotfiles/vim/src/*.vim'), '\n')
-    exe 'source' script
 endfor
