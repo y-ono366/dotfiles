@@ -46,6 +46,8 @@ set wrapscan
 set hlsearch
 " 空白文字の可視化
 set list
+" ステータスライン
+set statusline=%F%m%r%h%w%=[ENC=%{&fileencoding}][FORMAT=%{&ff}][LOW=%l/%L]
 
 filetype on
 " TABキーを押した際にタブ文字の代わりにスペースを入れる
