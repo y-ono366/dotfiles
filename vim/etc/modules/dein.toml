@@ -53,11 +53,6 @@ repo = 'rking/ag.vim'
 [[plugins]]
 repo = 'tomtom/tcomment_vim'
 
-### PUG syntax
-[[plugins]]
-repo = 'digitaltoad/vim-pug'
-on_ft = ['pug']
-
 [[plugins]]
 repo = 'mattn/emmet-vim'
 on_ft = ['html']
@@ -76,5 +71,16 @@ repo = 'tpope/vim-fugitive'
 [[plugins]]
 repo = 'w0rp/ale'
 
+### マルチカーソル
 [[plugins]]
 repo = 'terryma/vim-multiple-cursors'
+
+### カーソル移動 f{char}強化
+[[plugins]]
+repo = 'rhysd/clever-f.vim'
+
+[[plugins]]
+repo= 'easymotion/vim-easymotion'
+
+[[plugins]]
+repo= 'y-ono366/csv-2-sql-vim'
