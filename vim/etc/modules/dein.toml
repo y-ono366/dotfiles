@@ -75,10 +75,6 @@ repo = 'w0rp/ale'
 [[plugins]]
 repo = 'terryma/vim-multiple-cursors'
 
-### カーソル移動 f{char}強化
-[[plugins]]
-repo = 'rhysd/clever-f.vim'
-
 [[plugins]]
 repo= 'easymotion/vim-easymotion'
 
