@@ -83,3 +83,9 @@ repo= 'y-ono366/csv-2-sql-vim'
 
 [[plugins]]
 repo= 'vim-jp/vimdoc-ja'
+
+[[plugins]]
+repo = 'gregsexton/gitv'
+
+[[plugins]]
+repo ='idanarye/vim-merginal'
