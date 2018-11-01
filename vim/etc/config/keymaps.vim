@@ -9,7 +9,7 @@ noremap <C-j> :s/\<\@!\([A-Z]\)/\_\l\1/g
 noremap <C-u> :s/\(\w\+\)/'\1'/g
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>R h"bplvwhhxxb
-nnoremap <Leader>r vepb
+nnoremap <Leader>r ve"apb
 " nnoremap <Leader>r ciw<C-r>0<ESC>b
-nnoremap <Leader>y vey
+nnoremap <Leader>y ve"ay
 nnoremap <Leader>qq :qa!<CR>
