@@ -8,12 +8,6 @@ repo = 'scrooloose/nerdtree'
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
 
-[[plugins]]
-repo = 'othree/html5.vim'
-
-[[plugins]]
-repo = 'hail2u/vim-css3-syntax'
-
 ### カラースキーム
 [[plugins]]
 repo = 'morhetz/gruvbox'
@@ -27,19 +21,12 @@ repo = 'Shougo/unite.vim'
 [[plugins]]
 repo = 'gregsexton/MatchTag'
 
-### ES6 SyntaxHighLight
-[[plugins]]
-repo = 'othree/yajs.vim'
-
 [[plugins]]
 repo = 'thinca/vim-quickrun'
 
 ### table
 [[plugins]]
 repo = 'dhruvasagar/vim-table-mode'
-
-[[plugins]]
-repo = 'pangloss/vim-javascript'
 
 ### ファイル検索
 [[plugins]]
@@ -59,9 +46,6 @@ on_ft = ['html']
 
 [[plugins]]
 repo = 'twitvim/twitvim'
-
-[[plugins]]
-repo = 'udalov/kotlin-vim'
 
 ### git command
 [[plugins]]
