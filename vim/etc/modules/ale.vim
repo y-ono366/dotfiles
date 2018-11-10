@@ -21,3 +21,7 @@ function! LinterStatus() abort
     \)
 endfunction
 set statusline+=%{LinterStatus()}
+
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\}
