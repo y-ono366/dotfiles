@@ -73,6 +73,3 @@ repo = 'gregsexton/gitv'
 
 [[plugins]]
 repo ='idanarye/vim-merginal'
-
-[[plugins]]
-repo ='Yggdroot/indentLine'
