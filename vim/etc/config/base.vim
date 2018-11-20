@@ -32,8 +32,10 @@ set virtualedit=onemore
 set showmatch
 " コマンドラインの補完
 set wildmode=list:longest
+" 空白文字の可視化
+set list
 " 不可視文字を可視化(タブが「▸-」と表示される)
-set list listchars=tab:>-,trail:_
+set listchars=tab:>-,trail:_
 " 検索文字列が小文字の場合は大文字小文字を区別なく検索する
 set ignorecase
 " 検索文字列に大文字が含まれている場合は区別して検索する
@@ -44,8 +46,6 @@ set incsearch
 set wrapscan
 " 検索語をハイライト表示
 set hlsearch
-" 空白文字の可視化
-set list
 " ステータスライン
 set statusline=%F%m%r%h%w%=[ENC=%{&fileencoding}][FORMAT=%{&ff}][LOW=%l/%L]
 
@@ -63,6 +63,26 @@ set clipboard+=unnamedplus,unnamed,autoselect
 set noundofile
 " syntax on
 syntax on
+" 表示折り返す
+set wrap
+" ビープ音OFF
+set vb t_vb=
+" 起動時のメッセージを消す
+set shortmess& shortmess+=I
+" 起動時IMEをOFFにする
+set iminsert=0 imsearch=0
+" バックスペースでなんでも消せるように
+set backspace=indent,eol,start
+"  改行時にコメントしない
+set formatoptions-=r
+set formatoptions-=o
+" 日本語ヘルプを優先
+set helplang=ja,en
+" h と l で行を跨げるようにする
+set whichwrap +=h
+set whichwrap +=l
+" history size
+set history=100
 
 let mapleader = "\<Space>"
 augroup fileTypeIndent
