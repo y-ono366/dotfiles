@@ -83,6 +83,7 @@ set whichwrap +=h
 set whichwrap +=l
 " history size
 set history=100
+set relativenumber
 
 let mapleader = "\<Space>"
 augroup fileTypeIndent
