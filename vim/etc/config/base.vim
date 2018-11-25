@@ -18,8 +18,6 @@ set guioptions-=r
 set guioptions-=R
 set guioptions-=l
 set guioptions-=L
-" 行番号を表示
-set number
 " 現在の行を強調表示
 set cursorline
 " 現在の行を強調表示（縦）
