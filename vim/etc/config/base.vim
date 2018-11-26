@@ -55,7 +55,6 @@ set tabstop=4
 set shiftwidth=4
 " autoindent
 set autoindent
-set noautoindent
 set clipboard+=unnamedplus,unnamed,autoselect
 " undoファイル無効化
 set noundofile
