@@ -9,6 +9,7 @@ alias ck='pgrep Chrome | xargs kill'
 alias tx='exit'
 alias doco='docker-compose'
 alias javac='java -jar'
+alias vio='vim -u NONE -N'
 # alias vim='gvim --remote-tab-silent'
 alias t-kill='tmux kill-server'
 # java9以降読み込めないclassが存在するらしい
