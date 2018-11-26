@@ -73,3 +73,6 @@ repo ='idanarye/vim-merginal'
 
 [[plugins]]
 repo = 'tmhedberg/matchit'
+
+[[plugins]]
+repo = 'fatih/vim-go'
