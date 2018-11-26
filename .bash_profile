@@ -4,7 +4,9 @@ export PATH=/Applications/MacVim.app/Contents/bin:$PATH
 export PATH=$PATH:./node_modules/.bin
 export PATH=/Library/Frameworks/Python.framework/Versions/3.6/bin:$PATH
 export PATH=$HOME/.jenv/bin:$PATH
-export GOPATH=$HOME/.go
+export GOPATH=$HOME/go/package:$HOME/go/workspace
+export PATH=$HOME/go/package/bin:$HOME/go/workspace/bin:$PATH
+
 eval "$(jenv init -)"
 # export PATH=$HOME/.rbenv/bin:$PATH
 # eval "$(rbenv init -)"
