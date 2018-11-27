@@ -8,12 +8,7 @@ export GOPATH=$HOME/go
 export PATH=$HOME/go/bin:$PATH
 
 eval "$(jenv init -)"
-# export PATH=$HOME/.rbenv/bin:$PATH
-# eval "$(rbenv init -)"
-# export PATH="$HOME/.phpenv/bin:$PATH"
-# eval "$(phpenv init -)"
 export LSCOLORS=gxfxcxdxbxegedabagacad
-# PATH=$PATH:~/.composer/vendor/bin
 function kotc(){ kotlinc $1 -include-runtime -d ${1//.kt/.jar};}
 function is_exists() { type "$1" >/dev/null 2>&1; return $?; }
 function is_osx() { [[ $OSTYPE == darwin* ]]; }
