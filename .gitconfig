@@ -15,3 +15,5 @@
     lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     amd = commit --amend
     cp = cherry-pick
+    current-branch-name = ! git branch | grep -e '^\\* ' | sed -e 's/^\\* //g'
+    pull-f= !git fetch && git reset --hard origin/$(git current-branch)
