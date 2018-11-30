@@ -17,4 +17,4 @@
     cp = cherry-pick
     current-branch-name = ! git branch | grep -e '^\\* ' | sed -e 's/^\\* //g'
     pull-f= !git fetch && git reset --hard origin/$(git current-branch-name)
-    pushoc = push origin $(git current-branch-name)
+    pushoc = !git push origin $(git current-branch-name)
