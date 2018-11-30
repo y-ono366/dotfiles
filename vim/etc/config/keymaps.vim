@@ -2,6 +2,7 @@ imap { {}<LEFT>
 imap [ []<LEFT>
 imap ( ()<LEFT>
 nmap W %
+vmap W %
 noremap <C-i> <esc>
 noremap! <C-i> <esc>
 noremap <C-h> :s/_\(.\)/\u\1/g
