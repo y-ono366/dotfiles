@@ -76,3 +76,6 @@ repo = 'tmhedberg/matchit'
 
 [[plugins]]
 repo = 'fatih/vim-go'
+
+[[plugins]]
+repo = 'posva/vim-vue'
