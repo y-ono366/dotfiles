@@ -19,9 +19,6 @@ repo = 'rhysd/accelerated-jk'
 repo = 'Shougo/unite.vim'
 
 [[plugins]]
-repo = 'gregsexton/MatchTag'
-
-[[plugins]]
 repo = 'thinca/vim-quickrun'
 
 ### table
