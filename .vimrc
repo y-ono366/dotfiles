@@ -12,6 +12,8 @@ autocmd vimenter * syntax on
   call dein#begin(s:dein_dir)
   let g:rc_dir    = expand('~/dotfiles/vim/etc/modules/')
   let s:toml      = g:rc_dir . '/dein.toml'
+  call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 }) 
+  call dein#add('junegunn/fzf.vim', { 'depends': 'fzf' })
   call dein#load_toml(s:toml,      {'lazy': 0})
 if dein#check_install()
   call dein#install()
