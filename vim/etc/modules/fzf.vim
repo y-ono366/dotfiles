@@ -2,7 +2,11 @@
 " nmap <C-p> :Files<CR>
 
 nnoremap <C-p> :FZFFileList<CR>
-command! FZFFileList call fzf#run({
+command! FZFFileList call fzf#run(fzf#wrap({
             \ 'source': 'find . -type d -name .git -prune -o ! -name .DS_Store',
-            \ 'sink': 'e'})
+            \ 'down': '40%'}))
 
+let g:fzf_action = {
+            \ 'ctrl-t': 'tab split',
+            \ 'ctrl-x': 'split',
+            \ 'ctrl-v': 'vsplit' }
