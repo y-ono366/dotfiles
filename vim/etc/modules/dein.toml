@@ -74,4 +74,8 @@ repo = 'fatih/vim-go'
 repo = 'posva/vim-vue'
 
 [[plugins]]
+repo = 'junegunn/fzf'
+build = './install --all'
+
+[[plugins]]
 repo = 'junegunn/fzf.vim'
