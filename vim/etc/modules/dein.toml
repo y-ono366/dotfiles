@@ -75,5 +75,3 @@ repo = 'posva/vim-vue'
 
 [[plugins]]
 repo = 'junegunn/fzf.vim'
-
-
