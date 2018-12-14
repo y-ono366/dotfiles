@@ -26,8 +26,8 @@ repo = 'thinca/vim-quickrun'
 repo = 'dhruvasagar/vim-table-mode'
 
 ### grep
-[[plugins]]
-repo = 'rking/ag.vim'
+###[[plugins]]
+###repo = 'rking/ag.vim'
 
 ### コメントアウト
 [[plugins]]
