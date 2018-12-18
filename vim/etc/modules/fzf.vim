@@ -1,4 +1,3 @@
-:command Hs History:
 " nmap <C-p> :Files<CR>
 
 nnoremap <C-p> :FZFFileList<CR>
@@ -10,3 +9,5 @@ let g:fzf_action = {
             \ 'ctrl-t': 'tab split',
             \ 'ctrl-x': 'split',
             \ 'ctrl-v': 'vsplit' }
+
+nnoremap <Leader>h :History:<CR>
