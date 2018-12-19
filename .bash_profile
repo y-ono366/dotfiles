@@ -106,7 +106,10 @@ function tmux_automatically_attach_session()
         fi
     fi
 }
+if type "tmux" > /dev/null 2>&1
+then
 tmux_automatically_attach_session
+fi
 if [ -f ~/.bashrc ] ; then
 . ~/.bashrc
 fi
