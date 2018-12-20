@@ -21,7 +21,7 @@ function fbr() {
   git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
 }
 #fbr - checkout git branch (including remote branches)
-fbrm() {
+function fbrm() {
   local branches branch
   branches=$(git branch --all | grep -v HEAD) &&
   branch=$(echo "$branches" |
@@ -30,16 +30,33 @@ fbrm() {
 }
 
 # fd - cd to selected directory
-fd() {
+function fd() {
   local dir
   dir=$(find ${1:-.} -path '*/\.*' -prune \
                   -o -type d -print 2> /dev/null | fzf +m) &&
   cd "$dir"
 }
 
-fda() {
+function fda() {
   local dir
   dir=$(find ${1:-.} -type d 2> /dev/null | fzf +m) && cd "$dir"
+}
+
+function f-docker-start() {
+  local container
+  container="$(docker ps -a -f status=exited | sed -e '1d' | fzf --height 40% --reverse | awk '{print $1}')"
+  if [ -n "${container}" ]; then
+    echo 'starting container...'
+    docker start ${container}
+  fi
+}
+function f-docker-stop() {
+  local container
+  container="$(docker ps -a -f status=running | sed -e '1d' | fzf --height 40% --reverse | awk '{print $1}')"
+  if [ -n "${container}" ]; then
+    echo 'stopping container...'
+    docker stop ${container}
+  fi
 }
 ##########################################################
 
