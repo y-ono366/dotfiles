@@ -2,6 +2,7 @@
 :command Ss split
 :command Sv vsplit
 :command Dd %s/ *$//
+:command Dl v/./d
 :command Do DiffOrig
 :command Qr QuickRun
 :command Nw rightbelow vne
