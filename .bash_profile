@@ -113,6 +113,12 @@ fi
 if [ -f ~/.bashrc ] ; then
 . ~/.bashrc
 fi
+echo "${fg_bold[red]} ______ _   _   ___  _   _    _   _      _   _  __      __  _   __       __ ${reset_color}"
+echo "${fg_bold[red]}|  ____| | | |/ ___|| | / /  | | |  \   | | |/  \ \    / / | | |  \     /  |${reset_color}"
+echo "${fg_bold[red]}| |____| | | | |    | |/ /   | | | \ \  | |      \ \  / /  | | | \ \   /   |${reset_color}"
+echo "${fg_bold[red]}|  ____| | | | |    |   |    | | | |\ \ | |       \ \/ /   | | | |\ \ / /| |${reset_color}"
+echo "${fg_bold[red]}| |    | |_| | |___ | |\ \   | | | | \ \| |        \  /    | | | | \   / | |${reset_color}"
+echo "${fg_bold[red]}|_|     \___/ \____||_| \_\  |_| |_|  \ __|         \/     |_| |_|  \_/  |_|${reset_color}"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/yusukeohno/.sdkman"
