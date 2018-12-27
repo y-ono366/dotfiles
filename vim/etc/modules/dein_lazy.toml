@@ -7,7 +7,7 @@ repo = 'thinca/vim-quickrun'
 hook_post_source = '''
     exe 'source ~/dotfiles/vim/etc/modules/quickrun.lvim'
 '''
-on_i = 1
+on_cmd = ['QuickRun']
 
 ### table
 [[plugins]]
