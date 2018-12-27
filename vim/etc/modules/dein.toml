@@ -11,24 +11,9 @@ repo = 'morhetz/gruvbox'
 [[plugins]]
 repo = 'rhysd/accelerated-jk'
 
-[[plugins]]
-repo = 'thinca/vim-quickrun'
-
-### table
-[[plugins]]
-repo = 'dhruvasagar/vim-table-mode'
-
 ### grep
 ###[[plugins]]
 ###repo = 'rking/ag.vim'
-
-### コメントアウト
-[[plugins]]
-repo = 'tomtom/tcomment_vim'
-
-[[plugins]]
-repo = 'mattn/emmet-vim'
-on_ft = ['html']
 
 [[plugins]]
 repo = 'y-ono366/twitvim'
@@ -47,9 +32,6 @@ repo = 'terryma/vim-multiple-cursors'
 
 [[plugins]]
 repo= 'easymotion/vim-easymotion'
-
-[[plugins]]
-repo= 'vim-jp/vimdoc-ja'
 
 [[plugins]]
 repo = 'gregsexton/gitv'
