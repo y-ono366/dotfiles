@@ -1,8 +1,13 @@
 [[plugins]]
+repo = 'scrooloose/nerdtree'
+on_i = 1
+
+[[plugins]]
 repo = 'thinca/vim-quickrun'
 hook_post_source = '''
     exe 'source ~/dotfiles/vim/etc/modules/quickrun.lvim'
 '''
+on_i = 1
 
 ### table
 [[plugins]]
@@ -10,6 +15,7 @@ repo = 'dhruvasagar/vim-table-mode'
 hook_post_source = '''
     exe 'source ~/dotfiles/vim/etc/modules/table-mode.lvim'
 '''
+on_i = 1
 
 ### コメントアウト
 [[plugins]]
@@ -17,6 +23,7 @@ repo = 'tomtom/tcomment_vim'
 hook_post_source = '''
     exe 'source ~/dotfiles/vim/etc/modules/tcomment_vim.lvim'
 '''
+on_i = 1
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
@@ -24,3 +31,11 @@ on_ft = ['html']
 
 [[plugins]]
 repo= 'vim-jp/vimdoc-ja'
+
+### golang
+[[plugins]]
+repo = 'fatih/vim-go'
+hook_post_source = '''
+    exe 'source ~/dotfiles/vim/etc/modules/vim-go.lvim'
+'''
+on_ft = ['go']

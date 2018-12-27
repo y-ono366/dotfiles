@@ -1,9 +1,6 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
-[[plugins]]
-repo = 'scrooloose/nerdtree'
-
 ### カラースキーム
 [[plugins]]
 repo = 'morhetz/gruvbox'
@@ -42,9 +39,6 @@ repo ='idanarye/vim-merginal'
 [[plugins]]
 repo = 'tmhedberg/matchit'
 
-### golang
-[[plugins]]
-repo = 'fatih/vim-go'
 
 ###vue syntax
 [[plugins]]
