@@ -53,9 +53,6 @@ repo = 'junegunn/fzf.vim'
 [[plugins]]
 repo= 'vim-jp/vimdoc-ja'
 
-[[plugins]]
-repo = 'osyo-manga/vim-anzu'
-
 ### git command
 [[plugins]]
 repo = 'tpope/vim-fugitive'
