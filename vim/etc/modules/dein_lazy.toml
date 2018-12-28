@@ -1,12 +1,10 @@
 [[plugins]]
 repo = 'scrooloose/nerdtree'
-on_i = 1
+on_cmd = ['NERDTree']
 
 [[plugins]]
 repo = 'thinca/vim-quickrun'
-hook_post_source = '''
-    exe 'source ~/dotfiles/vim/etc/modules/quickrun.lvim'
-'''
+hook_post_source = 'source ~/dotfiles/vim/etc/modules/quickrun.lvim'
 on_cmd = ['QuickRun']
 
 [[plugins]]
@@ -17,16 +15,15 @@ on_ft = ['html']
 ### golang
 [[plugins]]
 repo = 'fatih/vim-go'
-hook_post_source = '''
-    exe 'source ~/dotfiles/vim/etc/modules/vim-go.lvim'
-'''
+hook_post_source = 'source ~/dotfiles/vim/etc/modules/vim-go.lvim'
 on_ft = ['go']
 
-
-### git command
+###vue syntax
 [[plugins]]
-repo = 'tpope/vim-fugitive'
-hook_post_source = '''
-    exe 'source ~/dotfiles/vim/etc/modules/fugitive.lvim'
-'''
-on_cmd = ['Gst']
+repo = 'posva/vim-vue'
+on_ft = ['vue']
+
+[[plugins]]
+repo = 'rhysd/accelerated-jk'
+on_map = {n = '<Plug>'}
+hook_add = 'source ~/dotfiles/vim/etc/modules/accelerated_jk.lvim'
