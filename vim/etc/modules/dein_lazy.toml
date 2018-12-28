@@ -9,28 +9,10 @@ hook_post_source = '''
 '''
 on_cmd = ['QuickRun']
 
-### table
-[[plugins]]
-repo = 'dhruvasagar/vim-table-mode'
-hook_post_source = '''
-    exe 'source ~/dotfiles/vim/etc/modules/table-mode.lvim'
-'''
-on_i = 1
-
-### コメントアウト
-[[plugins]]
-repo = 'tomtom/tcomment_vim'
-hook_post_source = '''
-    exe 'source ~/dotfiles/vim/etc/modules/tcomment_vim.lvim'
-'''
-on_i = 1
-
 [[plugins]]
 repo = 'mattn/emmet-vim'
 on_ft = ['html']
 
-[[plugins]]
-repo= 'vim-jp/vimdoc-ja'
 
 ### golang
 [[plugins]]
@@ -39,3 +21,12 @@ hook_post_source = '''
     exe 'source ~/dotfiles/vim/etc/modules/vim-go.lvim'
 '''
 on_ft = ['go']
+
+
+### git command
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+hook_post_source = '''
+    exe 'source ~/dotfiles/vim/etc/modules/fugitive.lvim'
+'''
+on_cmd = ['Gst']

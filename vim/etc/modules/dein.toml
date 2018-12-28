@@ -8,16 +8,20 @@ repo = 'morhetz/gruvbox'
 [[plugins]]
 repo = 'rhysd/accelerated-jk'
 
+### table
+[[plugins]]
+repo = 'dhruvasagar/vim-table-mode'
+
+### コメントアウト
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
 ### grep
 ###[[plugins]]
 ###repo = 'rking/ag.vim'
 
 [[plugins]]
 repo = 'y-ono366/twitvim'
-
-### git command
-[[plugins]]
-repo = 'tpope/vim-fugitive'
 
 ### 非同期syntax check
 [[plugins]]
@@ -52,3 +56,6 @@ build = './install --all'
 ###fzf.vim
 [[plugins]]
 repo = 'junegunn/fzf.vim'
+
+[[plugins]]
+repo= 'vim-jp/vimdoc-ja'
