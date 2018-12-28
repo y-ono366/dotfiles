@@ -1,41 +1,25 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
-[[plugins]]
-repo = 'scrooloose/nerdtree'
-
 ### カラースキーム
 [[plugins]]
 repo = 'morhetz/gruvbox'
 
-[[plugins]]
-repo = 'rhysd/accelerated-jk'
-
-[[plugins]]
-repo = 'thinca/vim-quickrun'
 
 ### table
 [[plugins]]
 repo = 'dhruvasagar/vim-table-mode'
 
-### grep
-###[[plugins]]
-###repo = 'rking/ag.vim'
-
 ### コメントアウト
 [[plugins]]
 repo = 'tomtom/tcomment_vim'
 
-[[plugins]]
-repo = 'mattn/emmet-vim'
-on_ft = ['html']
+### grep
+###[[plugins]]
+###repo = 'rking/ag.vim'
 
 [[plugins]]
 repo = 'y-ono366/twitvim'
-
-### git command
-[[plugins]]
-repo = 'tpope/vim-fugitive'
 
 ### 非同期syntax check
 [[plugins]]
@@ -49,9 +33,6 @@ repo = 'terryma/vim-multiple-cursors'
 repo= 'easymotion/vim-easymotion'
 
 [[plugins]]
-repo= 'vim-jp/vimdoc-ja'
-
-[[plugins]]
 repo = 'gregsexton/gitv'
 
 [[plugins]]
@@ -59,14 +40,6 @@ repo ='idanarye/vim-merginal'
 
 [[plugins]]
 repo = 'tmhedberg/matchit'
-
-### golang
-[[plugins]]
-repo = 'fatih/vim-go'
-
-###vue syntax
-[[plugins]]
-repo = 'posva/vim-vue'
 
 ###fzf
 [[plugins]]
@@ -76,3 +49,10 @@ build = './install --all'
 ###fzf.vim
 [[plugins]]
 repo = 'junegunn/fzf.vim'
+
+[[plugins]]
+repo= 'vim-jp/vimdoc-ja'
+
+### git command
+[[plugins]]
+repo = 'tpope/vim-fugitive'
