@@ -14,3 +14,4 @@ nnoremap <Leader>r ve"0pb
 " nnoremap <Leader>r ciw<C-r>0<ESC>b
 nnoremap <Leader>y ve"0y
 nnoremap <Leader>qq :qa!<CR>
+nmap <C-o><C-o> <ESC>i<C-R>=strftime("%Y-%m-%d %H:%M:%S")<CR><ESC>
