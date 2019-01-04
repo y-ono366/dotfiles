@@ -1,6 +1,6 @@
 # Alias設定
-alias ll='ls -lah'
-alias ls='ls -G'
+alias ll='ls -lah --color=auto'
+alias ls='ls -G --color=auto'
 alias twl='tw -tl -id'
 alias tw='tw -id'
 alias doc='docker'
