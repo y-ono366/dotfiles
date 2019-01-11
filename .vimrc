@@ -10,7 +10,7 @@ endif
 
 autocmd vimenter * syntax on
   call dein#begin(s:dein_dir)
-  let g:rc_dir    = expand('~/dotfiles/vim/etc/modules/')
+  let g:rc_dir    = expand('~/dotfiles/vim/etc/plugins/')
   let s:toml      = g:rc_dir . '/dein.toml'
   let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
   call dein#load_toml(s:toml,      {'lazy': 0})

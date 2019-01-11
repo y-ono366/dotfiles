@@ -4,14 +4,15 @@
 
 [alias]
     gr =  log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
-    st = status
+    st = status --short --branch
     cm = commit
-    df = diff --word-diff
+    df = diff --color-words
     br = branch
+    lg = log --stat --decorate --find-renames
     one = log --oneline
     ch = checkout
     reseth = reset --hard
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    lgr = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     amd = commit --amend
     cp = cherry-pick
