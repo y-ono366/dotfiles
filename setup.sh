@@ -5,5 +5,6 @@ do
     [[ "$f" == ".git" ]] && continue
     [[ "$f" == ".DS_Store" ]] && continue
     [[ "$f" == ".gitignore" ]] && continue
-    ln -s $HOME/dotfiles/$f $HOME/$f
+    mv $HOME/$f "$HOME/$f.bk"
+    cp $HOME/dotfiles/$f $HOME/$f
 done
