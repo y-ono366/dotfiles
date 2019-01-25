@@ -5,7 +5,6 @@ repo = 'Shougo/dein.vim'
 [[plugins]]
 repo = 'morhetz/gruvbox'
 
-
 ### table
 [[plugins]]
 repo = 'dhruvasagar/vim-table-mode'
@@ -56,3 +55,6 @@ repo= 'vim-jp/vimdoc-ja'
 ### git command
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
