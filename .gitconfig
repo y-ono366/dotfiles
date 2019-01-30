@@ -23,3 +23,5 @@
     mg  = merge
     mga = merge --abort
     mgn = merge --no-ff
+    adu = add -u :/
+    ad  = add
