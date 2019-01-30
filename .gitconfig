@@ -3,25 +3,25 @@
 	name = yusuke ohno
 
 [alias]
-    gr =  log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
-    st = status --short --branch
-    cm = commit
-    df = diff --color-words
-    br = branch
-    lg = log --stat --decorate --find-renames
-    one = log --oneline
-    ch = checkout
-    reseth = reset --hard
-    lgr = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    amd = commit --amend
-    cp = cherry-pick
-    current-branch-name = ! git branch | grep -e '^\\* ' | sed -e 's/^\\* //g'
-    pull-f= !git fetch && git reset --hard origin/$(git current-branch-name)
-    pushoc = !git push origin $(git current-branch-name)
-    pulloc = !git pull origin $(git current-branch-name)
-    mg  = merge
-    mga = merge --abort
-    mgn = merge --no-ff
-    adu = add -u :/
-    ad  = add
+    gr      =  log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
+    st      = status --short --branch
+    cm      = commit
+    df      = diff --color-words
+    br      = branch
+    lg      = log --stat --decorate --find-renames
+    one     = log --oneline
+    ch      = checkout
+    reseth  = reset --hard
+    lgr     = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    lga     = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    amd     = commit --amend
+    cp      = cherry-pick
+    cbn     = ! git branch | grep -e '^\\* ' | sed -e 's/^\\* //g'
+    pull-f  = !git fetch && git reset --hard origin/$(git cbn)
+    pushoc  = !git push origin $(git cbn)
+    pulloc  = !git pull origin $(git cbn)
+    mg      = merge
+    mga     = merge --abort
+    mgn     = merge --no-ff
+    adu     = add -u :/
+    ad      = add
