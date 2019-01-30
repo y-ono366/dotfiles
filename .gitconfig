@@ -20,3 +20,6 @@
     pull-f= !git fetch && git reset --hard origin/$(git current-branch-name)
     pushoc = !git push origin $(git current-branch-name)
     pulloc = !git pull origin $(git current-branch-name)
+    mg  = merge
+    mga = merge --abort
+    mgn = merge --no-ff
