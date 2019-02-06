@@ -61,7 +61,7 @@ function f-docker-stop() {
 }
 ##########################################################
 
-
+function jq-l(){ jq '.'${1}' | select( .'${2}' | contains("'${3}'"))';}
 function kotc(){ kotlinc $1 -include-runtime -d ${1//.kt/.jar};}
 function is_exists() { type "$1" >/dev/null 2>&1; return $?; }
 function is_osx() { [[ $OSTYPE == darwin* ]]; }
