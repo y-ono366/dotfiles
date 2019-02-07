@@ -82,13 +82,5 @@ set whichwrap +=l
 " history size
 set history=100
 set number
-
 let mapleader = "\<Space>"
-augroup fileTypeIndent
-    autocmd!
-    autocmd BufNewFile,BufRead *.go  setlocal noexpandtab tabstop=4 shiftwidth=4
-    autocmd BufNewFile,BufRead *.js  setlocal tabstop=2 shiftwidth=2
-    autocmd BufNewFile,BufRead *.tmpl setlocal filetype=html
-    autocmd BufNewFile,BufRead *.lvim setlocal filetype=vim
-augroup END
 filetype plugin indent on
