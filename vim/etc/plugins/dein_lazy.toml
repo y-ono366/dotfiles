@@ -32,3 +32,8 @@ hook_add = 'source ~/dotfiles/vim/etc/plugins/accelerated_jk.lvim'
 repo = 'osyo-manga/vim-anzu'
 on_map = {n ='<Plug>'}
 hook_add = 'source ~/dotfiles/vim/etc/plugins/anzu.lvim'
+
+[[plugins]]
+repo = 'chrisbra/csv.vim'
+on_ft = ['csv']
+hook_add = 'source ~/dotfiles/vim/etc/plugins/csv.lvim'
