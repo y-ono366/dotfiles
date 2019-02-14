@@ -8,4 +8,4 @@
 :command Nw rightbelow vne
 :command Nm :%s/^/\=line(".")
 :command Nt tabnew
-:command Suw :w !sudo tee%
+:command Suw :w !sudo tee > /dev/null %<CR> :e!<CR>
