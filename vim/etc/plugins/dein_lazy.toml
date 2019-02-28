@@ -37,3 +37,7 @@ hook_add = 'source ~/dotfiles/vim/etc/plugins/anzu.lvim'
 repo = 'chrisbra/csv.vim'
 on_ft = ['csv']
 hook_add = 'source ~/dotfiles/vim/etc/plugins/csv.lvim'
+
+[[plugins]]
+repo = 'ap/vim-css-color'
+on_ft = ['css']
