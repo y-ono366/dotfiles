@@ -21,6 +21,14 @@ function fbr() {
   branch=$(echo "$branches" | fzf +m) &&
   git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
 }
+
+function fmgn(){
+  local branches branch
+  branches=$(git branch -vv) &&
+  branch=$(echo "$branches" | fzf +m) &&
+  git merge --no-ff $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+}
+
 #fbr - checkout git branch (including remote branches)
 function fbrm() {
   local branches branch

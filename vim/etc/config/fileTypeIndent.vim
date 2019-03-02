@@ -2,8 +2,7 @@ let setFiletypes = {
     \ 'go'  : {'noexpandtab':'','tabstop':'4','shiftwidth':'4'},
     \ 'js'  : {'tabstop':'2','shiftwidth':'2'},
     \ 'tmpl': {'filetype':'html'},
-    \ 'lvim': {'filetype':'vim'},
-    \ 'php': {'tabstop':'2','shiftwidth':'2'}}
+    \ 'lvim': {'filetype':'vim'}}
 
 function! FileTypeIndent(setFiletypes) abort
     augroup fileTypeIndent
