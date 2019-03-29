@@ -15,6 +15,15 @@ function! Cpword()
     execute 'normal vey'
 endfunction
 
+command! -nargs=* Cr call Cr(<f-args>)
+function! Cr(...)
+    if a:0 == 1
+        execute "%s/".a:1."/\r".a:1."/gI"
+    elseif a:2 == 1
+        execute "%s/".a:1."/".a:1."\r/gI"
+    endif
+endfunction
+
 function! ProfileCursorMove() abort
   let profile_file = expand('~/log/vim-profile.log')
   if filereadable(profile_file)
