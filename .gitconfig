@@ -9,7 +9,7 @@
     df      = diff --color-words
     br      = branch
     lg      = log --stat --decorate --find-renames
-    one     = log --oneline
+    one     = log --pretty=oneline -n 20 --graph --abbrev-commit
     ch      = checkout
     reseth  = reset --hard
     lgr     = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
@@ -25,3 +25,4 @@
     mgn     = merge --no-ff
     adu     = add -u :/
     ad      = add
+    aliases = config --get-regexp alias
