@@ -7,6 +7,7 @@ export PATH=$HOME/.jenv/bin:$PATH
 export GOPATH=$HOME/go
 export PATH=$HOME/go/bin:$PATH
 export PATH=$HOME/.gem/ruby/2.5.0/bin:$PATH
+export PATH=$HOME/.composer/vendor/bin:$PATH
 
 eval "$(jenv init -)"
 export LSCOLORS=gxfxcxdxbxegedabagacad
