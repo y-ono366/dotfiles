@@ -17,3 +17,13 @@ alias t-kill='tmux kill-server'
 # export JAVA_TOOL_OPTIONS="--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[ -f /Users/yusukeohno/.nodebrew/node/v8.11.4/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash ] && . /Users/yusukeohno/.nodebrew/node/v8.11.4/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[ -f /Users/yusukeohno/.nodebrew/node/v8.11.4/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash ] && . /Users/yusukeohno/.nodebrew/node/v8.11.4/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[ -f /Users/yusukeohno/.nodebrew/node/v8.11.4/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.bash ] && . /Users/yusukeohno/.nodebrew/node/v8.11.4/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.bash

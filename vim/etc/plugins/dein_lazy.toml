@@ -9,7 +9,7 @@ on_cmd = ['QuickRun']
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
-on_ft = ['html','gohtmltmpl','php']
+on_ft = ['html','gohtmltmpl','php','javascript']
 
 
 ### golang
@@ -41,3 +41,7 @@ hook_add = 'source ~/dotfiles/vim/etc/plugins/anzu.lvim'
 [[plugins]]
 repo = 'kannokanno/previm'
 on_ft = ['markdown']
+
+[[plugins]]
+repo = 'mxw/vim-jsx'
+on_ft = ['javascript', 'javascript.jsx']
