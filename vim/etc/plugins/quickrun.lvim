@@ -2,6 +2,13 @@ let g:quickrun_config = {
  \ "javascript": {
  \   "command": "node",
  \   "tempfile": "{tempname()}.js"
- \   }
+ \   },
+ \ "javascript.jsx": {
+ \   "command": "node",
+ \   "tempfile": "{tempname()}.js"
+ \   },
+ \ "*": {
+ \   'split': '',
+ \   'hook/time/enable': '1',
+ \   },
  \ }
-let g:quickrun_config={'*': {'split': ''}}
