@@ -44,4 +44,5 @@ on_ft = ['markdown']
 
 [[plugins]]
 repo = 'mxw/vim-jsx'
+hook_post_source = 'source ~/dotfiles/vim/etc/plugins/vim-jsx.lvim'
 on_ft = ['javascript', 'javascript.jsx']
