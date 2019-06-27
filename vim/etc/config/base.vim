@@ -84,3 +84,5 @@ set history=100
 set number
 let mapleader = "\<Space>"
 filetype plugin indent on
+let g:netrw_preview=1
+let g:netrw_winsize=13
