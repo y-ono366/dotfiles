@@ -1,6 +1,6 @@
-### [[plugins]]
-### repo = 'scrooloose/nerdtree'
-### on_cmd = ['NERDTree']
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+on_cmd = ['NERDTree']
 
 [[plugins]]
 repo = 'thinca/vim-quickrun'
