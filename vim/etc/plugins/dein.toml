@@ -5,18 +5,6 @@ repo = 'Shougo/dein.vim'
 [[plugins]]
 repo = 'morhetz/gruvbox'
 
-### table
-[[plugins]]
-repo = 'dhruvasagar/vim-table-mode'
-
-### コメントアウト
-[[plugins]]
-repo = 'tomtom/tcomment_vim'
-
-### grep
-###[[plugins]]
-###repo = 'rking/ag.vim'
-
 [[plugins]]
 repo = 'y-ono366/twitvim'
 
@@ -27,12 +15,6 @@ repo = 'w0rp/ale'
 ### マルチカーソル
 [[plugins]]
 repo = 'terryma/vim-multiple-cursors'
-
-[[plugins]]
-repo= 'easymotion/vim-easymotion'
-
-[[plugins]]
-repo = 'gregsexton/gitv'
 
 [[plugins]]
 repo ='idanarye/vim-merginal'
@@ -58,3 +40,10 @@ repo = 'tpope/vim-fugitive'
 
 [[plugins]]
 repo = 'tpope/vim-surround'
+
+### コメントアウト
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
+[[plugins]]
+repo= 'easymotion/vim-easymotion'

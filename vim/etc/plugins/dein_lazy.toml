@@ -46,3 +46,12 @@ on_ft = ['markdown']
 repo = 'mxw/vim-jsx'
 hook_post_source = 'source ~/dotfiles/vim/etc/plugins/vim-jsx.lvim'
 on_ft = ['javascript', 'javascript.jsx']
+
+### table
+[[plugins]]
+repo = 'dhruvasagar/vim-table-mode'
+on_cmd = ['TableModeEnable']
+
+[[plugins]]
+repo = 'gregsexton/gitv'
+on_cmd = ['Gitv']
