@@ -55,3 +55,9 @@ on_cmd = ['TableModeEnable']
 [[plugins]]
 repo = 'gregsexton/gitv'
 on_cmd = ['Gitv']
+
+### git command
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+hook_post_source = 'source ~/dotfiles/vim/etc/plugins/fugitive.lvim'
+on_cmd = ['Gst']
