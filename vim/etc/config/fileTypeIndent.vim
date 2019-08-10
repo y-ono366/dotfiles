@@ -2,6 +2,8 @@ let setFiletypes = {
     \ 'go'  : {'noexpandtab':'','tabstop':'4','shiftwidth':'4'},
     \ 'js'  : {'tabstop':'2','shiftwidth':'2'},
     \ 'tmpl': {'filetype':'html'},
+    \ 'ts'  : {'filetype':'javascript'},
+    \ 'tsx'  : {'filetype':'javascript'},
     \ 'lvim': {'filetype':'vim'}}
 
 function! FileTypeIndent(setFiletypes) abort
