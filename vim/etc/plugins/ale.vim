@@ -17,6 +17,7 @@ let g:ale_javascript_prettier_use_local_config = 1
 let g:ale_php_phpstan_use_global = 1
 let g:ale_fixers = {
 \   'javascript': ['prettier','eslint'],
+\   'vue'       : ['prettier','eslint'],
 \   'json'      : ['prettier'],
 \   'php'       : ['php_cs_fixer'],
 \}
