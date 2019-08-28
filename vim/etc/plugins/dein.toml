@@ -34,9 +34,6 @@ repo = 'junegunn/fzf.vim'
 [[plugins]]
 repo= 'vim-jp/vimdoc-ja'
 
-### git command
-[[plugins]]
-repo = 'tpope/vim-fugitive'
 
 [[plugins]]
 repo = 'tpope/vim-surround'
