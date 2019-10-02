@@ -9,6 +9,9 @@ export PATH=$HOME/go/bin:$PATH
 export PATH=$HOME/.gem/ruby/2.5.0/bin:$PATH
 export PATH=/usr/local/lib/ruby/gems/2.5.0/bin:$PATH
 export PATH=$HOME/.composer/vendor/bin:$PATH
+export GOENV_ROOT=$HOME/.goenv
+export PATH=$GOENV_ROOT/bin:$PATH
+eval "$(goenv init -)"
 
 eval "$(jenv init -)"
 export LSCOLORS=gxfxcxdxbxegedabagacad
