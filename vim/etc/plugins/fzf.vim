@@ -18,3 +18,9 @@ let g:fzf_action = {
             \ 'ctrl-v': 'vsplit' }
 
 nnoremap <Leader>h :History:<CR>
+
+command! -bang -nargs=* Ag
+  \ call fzf#vim#ag(<q-args>,
+  \                 <bang>0 ? fzf#vim#with_preview('up:60%')
+  \                         : fzf#vim#with_preview('right:50%:hidden', '?'),
+  \                 <bang>0)
