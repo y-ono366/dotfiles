@@ -44,3 +44,10 @@ repo = 'tomtom/tcomment_vim'
 
 [[plugins]]
 repo= 'easymotion/vim-easymotion'
+
+[[plugins]]
+repo = 'gregsexton/gitv'
+
+### git command
+[[plugins]]
+repo = 'tpope/vim-fugitive'
