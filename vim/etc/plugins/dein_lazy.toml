@@ -13,15 +13,31 @@ on_ft = ['html','gohtmltmpl','php','javascript','vue']
 
 
 ### golang
-[[plugins]]
-repo = 'fatih/vim-go'
-hook_post_source = 'source ~/dotfiles/vim/etc/plugins/vim-go.lvim'
-on_ft = ['go']
+### [[plugins]]
+### repo = 'fatih/vim-go'
+### hook_post_source = 'source ~/dotfiles/vim/etc/plugins/vim-go.lvim'
+### on_ft = ['go']
 
 ###vue syntax
 [[plugins]]
 repo = 'posva/vim-vue'
 on_ft = ['vue']
+
+[[plugins]]
+repo = 'prabirshrestha/async.vim'
+on_ft = ['vue','go']
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+on_ft = ['vue','go']
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+on_ft = ['vue','go']
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+on_ft = ['vue','go']
 
 [[plugins]]
 repo = 'rhysd/accelerated-jk'
