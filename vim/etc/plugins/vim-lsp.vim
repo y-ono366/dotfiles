@@ -5,16 +5,16 @@ let g:lsp_log_verbose = 1
 let g:lsp_log_file = expand('~/.cache/vim-lsp.log')
 let g:asyncomplete_log_file = expand('~/.cache/asyncomplete.log')
 
-if executable('golsp')
+if executable('go-langserver')
   augroup LspGo
     au!
-    autocmd User lsp_setup call lsp#register_server({
-          \ 'name': 'go-lang',
-          \ 'cmd': {server_info->['golsp', '-mode', 'stdio']},
+    au User lsp_setup call lsp#register_server({
+          \ 'name': 'go-langserver',
+          \ 'cmd': {server_info->['go-langserver', '-gocodecompletion']},
           \ 'whitelist': ['go'],
           \ })
-    autocmd FileType go setlocal omnifunc=lsp#complete
-  augroup end
+    au FileType go setlocal omnifunc=lsp#complete
+  augroup END
 endif
 
 if executable('vls')
@@ -52,7 +52,7 @@ if executable('vls')
 endif
 
 
-nnoremap gd :<C-u>LspDefinition<CR>
+nnoremap gd :tab split<cr>:LspDefinition<cr>
 nnoremap gD :<C-u>LspReferences<CR>
 nnoremap gs :<C-u>LspDocumentSymbol<CR>
 nnoremap gS :<C-u>LspWorkspaceSymbol<CR>
