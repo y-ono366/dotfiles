@@ -5,8 +5,8 @@ nmap W %
 vmap W %
 noremap <C-i> <esc>
 noremap! <C-i> <esc>
-noremap <C-h> :s/_\(.\)/\u\1/g
-noremap <C-j> :s/\<\@!\([A-Z]\)/\_\l\1/g
+noremap <C-c> :s/_\(.\)/\u\1/g
+noremap <C-s> :s/\<\@!\([A-Z]\)/\_\l\1/g
 noremap <C-u> :s/\(\w\+\)/'\1'/g
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>R h"bplvwhhxxb

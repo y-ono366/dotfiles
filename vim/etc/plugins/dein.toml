@@ -51,3 +51,9 @@ repo = 'gregsexton/gitv'
 ### git command
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'SirVer/ultisnips'
+
+[[plugins]]
+repo = 'honza/vim-snippets'
