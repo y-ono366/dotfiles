@@ -8,3 +8,4 @@
 :command Nw rightbelow vne
 :command Nm :%s/^/\=line(".")
 :command Suw :w !sudo tee > /dev/null %<CR> :e!<CR>
+:command Snid SnippetsDefault snippet <CR>
