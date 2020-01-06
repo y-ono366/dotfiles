@@ -1,6 +1,0 @@
-nmap wc :WhatColumn!<CR>
-nmap wcn :WhatColumn<CR>
-
-function! Si(column,value)
-  execute 'SearchInColumn '.a:column.' /'.a:value.'/'
-endfunction

@@ -17,9 +17,6 @@ repo = 'w0rp/ale'
 repo = 'terryma/vim-multiple-cursors'
 
 [[plugins]]
-repo ='idanarye/vim-merginal'
-
-[[plugins]]
 repo = 'tmhedberg/matchit'
 
 ###fzf

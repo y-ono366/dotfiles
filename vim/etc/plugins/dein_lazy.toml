@@ -49,15 +49,6 @@ repo = 'osyo-manga/vim-anzu'
 on_map = {n ='<Plug>'}
 hook_add = 'source ~/dotfiles/vim/etc/plugins/anzu.lvim'
 
-### [[plugins]]
-### repo = 'chrisbra/csv.vim'
-### on_ft = ['csv']
-### hook_add = 'source ~/dotfiles/vim/etc/plugins/csv.lvim'
-
-[[plugins]]
-repo = 'kannokanno/previm'
-on_ft = ['markdown']
-
 [[plugins]]
 repo = 'mxw/vim-jsx'
 hook_post_source = 'source ~/dotfiles/vim/etc/plugins/vim-jsx.lvim'
@@ -67,4 +58,3 @@ on_ft = ['javascript', 'javascript.jsx']
 [[plugins]]
 repo = 'dhruvasagar/vim-table-mode'
 on_cmd = ['TableModeEnable']
-
