@@ -1,19 +1,14 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
-export PATH=/Applications/MacVim.app/Contents/bin:$PATH
 export PATH=$PATH:./node_modules/.bin
-export PATH=/Library/Frameworks/Python.framework/Versions/3.6/bin:$PATH
-export PATH=$HOME/.jenv/bin:$PATH
 export GOPATH=$HOME/go
 export PATH=$HOME/go/bin:$PATH
 export PATH=$HOME/.gem/ruby/2.5.0/bin:$PATH
 export PATH=/usr/local/lib/ruby/gems/2.5.0/bin:$PATH
-export PATH=$HOME/.composer/vendor/bin:$PATH
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
 
-eval "$(jenv init -)"
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
 ########################   FZF   #########################
@@ -154,6 +149,3 @@ echo "${fg_bold[red]}|  ____| | | | |    |   |    | | | |\ \ | |       \ \/ /   
 echo "${fg_bold[red]}| |    | |_| | |___ | |\ \   | | | | \ \| |        \  /    | | | | \   / | |${reset_color}"
 echo "${fg_bold[red]}|_|     \___/ \____||_| \_\  |_| |_|  \ __|         \/     |_| |_|  \_/  |_|${reset_color}"
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/yusukeohno/.sdkman"
-[[ -s "/Users/yusukeohno/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/yusukeohno/.sdkman/bin/sdkman-init.sh"
