@@ -1,12 +1,3 @@
-export PATH=/usr/local/bin:$PATH
-export PATH=/Applications/MacVim.app/Contents/bin:$PATH
-export PATH=$PATH:./node_modules/.bin
-export GOPATH=$HOME/go
-export PATH=$HOME/go/bin:$PATH
-export GOENV_ROOT=$HOME/.goenv
-export PATH=$GOENV_ROOT/bin:$PATH
-eval "$(goenv init -)"
-
 export LSCOLORS=gxfxcxdxbxegedabagacad
 if [ -f ~/.zshrc ] ; then
 . ~/.zshrc
