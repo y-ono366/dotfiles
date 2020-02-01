@@ -1,3 +1,11 @@
+export PATH=/usr/local/bin:$PATH
+export PATH=$PATH:./node_modules/.bin
+export GOPATH=$HOME/go
+export PATH=$HOME/go/bin:$PATH
+export GOENV_ROOT=$HOME/.goenv
+export PATH=$GOENV_ROOT/bin:$PATH
+eval "$(goenv init -)"
+
 # Alias設定
 alias ll='ls -lah'
 alias ls='ls -G'
@@ -22,3 +30,5 @@ alias t-kill='tmux kill-server'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"

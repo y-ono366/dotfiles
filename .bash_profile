@@ -1,12 +1,3 @@
-export PATH=/usr/local/bin:$PATH
-export PATH=$PATH:./node_modules/.bin
-export GOPATH=$HOME/go
-export PATH=$HOME/go/bin:$PATH
-export GOENV_ROOT=$HOME/.goenv
-export PATH=$GOENV_ROOT/bin:$PATH
-eval "$(goenv init -)"
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
 ########################   FZF   #########################
