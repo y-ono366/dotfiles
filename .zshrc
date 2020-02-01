@@ -1,10 +1,10 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=/Applications/MacVim.app/Contents/bin:$PATH
 export PATH=$PATH:./node_modules/.bin
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$PATH
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
 eval "$(goenv init -)"
 
 
