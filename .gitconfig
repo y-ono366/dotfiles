@@ -25,4 +25,6 @@
     mgn     = merge --no-ff
     adu     = add -u :/
     ad      = add
+    sh      = stash
+    pp      = stash pop
     aliases = config --get-regexp alias
