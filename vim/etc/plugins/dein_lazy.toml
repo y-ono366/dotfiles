@@ -25,19 +25,19 @@ on_ft = ['vue']
 
 [[plugins]]
 repo = 'prabirshrestha/async.vim'
-on_ft = ['vue','go']
+on_ft = ['vue','go','javascript','typescript']
 
 [[plugins]]
 repo = 'prabirshrestha/vim-lsp'
-on_ft = ['vue','go']
+on_ft = ['vue','go','javascript','typescript']
 
 [[plugins]]
 repo = 'prabirshrestha/asyncomplete.vim'
-on_ft = ['vue','go']
+on_ft = ['vue','go','javascript','typescript']
 
 [[plugins]]
 repo = 'prabirshrestha/asyncomplete-lsp.vim'
-on_ft = ['vue','go']
+on_ft = ['vue','go','javascript','typescript']
 
 [[plugins]]
 repo = 'rhysd/accelerated-jk'
