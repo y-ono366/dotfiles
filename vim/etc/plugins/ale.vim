@@ -17,12 +17,14 @@ let g:ale_php_phpstan_use_global = 1
 
 let g:ale_linters = {
 \ 'javascript': ['eslint'],
+\ 'typescript': ['eslint'],
 \ 'vue'       : ['eslint'],
 \ 'go'        : ['govet','golint'],
 \ }
 
 let g:ale_fixers = {
 \   'javascript': ['prettier'],
+\   'typescript': ['prettier'],
 \   'vue'       : ['prettier'],
 \   'go'        : ['gofmt'],
 \   'json'      : ['prettier'],
