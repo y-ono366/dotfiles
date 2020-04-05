@@ -4,7 +4,9 @@ let setFiletypes = {
     \ 'vue' : {'tabstop':'2','shiftwidth':'2'},
     \ 'vim' : {'tabstop':'2','shiftwidth':'2'},
     \ 'tmpl': {'filetype':'html'},
+    \ 'tsx' : {'filetype':'typescript.tsx'},
     \ 'lvim': {'filetype':'vim'}}
+
 
 function! FileTypeIndent(setFiletypes) abort
     augroup fileTypeIndent
