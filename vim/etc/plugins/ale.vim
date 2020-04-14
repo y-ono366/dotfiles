@@ -17,7 +17,7 @@ let g:ale_php_phpstan_use_global = 1
 
 let g:ale_linters = {
 \ 'javascript': ['eslint'],
-\ 'typescript': ['eslint'],
+\ 'typescript': ['eslint','tsserver'],
 \ 'vue'       : ['eslint'],
 \ 'go'        : ['govet','golint'],
 \ }

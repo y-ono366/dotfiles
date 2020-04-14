@@ -9,7 +9,7 @@ on_cmd = ['QuickRun']
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
-on_ft = ['html','gohtmltmpl','php','javascript','vue']
+on_ft = ['html','gohtmltmpl','php','javascript','vue','typescript','typescript.tsx']
 
 
 ### golang
@@ -49,10 +49,10 @@ repo = 'osyo-manga/vim-anzu'
 on_map = {n ='<Plug>'}
 hook_add = 'source ~/dotfiles/vim/etc/plugins/anzu.lvim'
 
-[[plugins]]
-repo = 'mxw/vim-jsx'
-hook_post_source = 'source ~/dotfiles/vim/etc/plugins/vim-jsx.lvim'
-on_ft = ['javascript', 'javascript.jsx']
+### [[plugins]]
+### repo = 'mxw/vim-jsx'
+### hook_post_source = 'source ~/dotfiles/vim/etc/plugins/vim-jsx.lvim'
+### on_ft = ['javascript', 'javascript.jsx']
 
 ### table
 [[plugins]]
