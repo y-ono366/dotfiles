@@ -58,3 +58,7 @@ hook_add = 'source ~/dotfiles/vim/etc/plugins/anzu.lvim'
 [[plugins]]
 repo = 'dhruvasagar/vim-table-mode'
 on_cmd = ['TableModeEnable']
+
+[[plugins]]
+repo = 'tikhomirov/vim-glsl'
+on_ft = ['glsl']

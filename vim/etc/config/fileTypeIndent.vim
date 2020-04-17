@@ -5,6 +5,8 @@ let setFiletypes = {
     \ 'vim' : {'tabstop':'2','shiftwidth':'2'},
     \ 'tmpl': {'filetype':'html'},
     \ 'tsx' : {'filetype':'typescript.tsx'},
+    \ 'vert' : {'filetype':'glsl'},
+    \ 'frag' : {'filetype':'glsl'},
     \ 'lvim': {'filetype':'vim'}}
 
 
