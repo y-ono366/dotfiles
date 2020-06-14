@@ -40,7 +40,8 @@ function fda() {
   dir=$(find ${1:-.} -type d 2> /dev/null | fzf +m) && cd "$dir"
 }
 
-function f-docker-start() {
+# start docker container
+function fdocup() {
   local container
   container="$(docker ps -a -f status=exited | sed -e '1d' | fzf --height 40% --reverse | awk '{print $1}')"
   if [ -n "${container}" ]; then
@@ -48,7 +49,9 @@ function f-docker-start() {
     docker start ${container}
   fi
 }
-function f-docker-stop() {
+
+# stop docker container
+function fdocdown() {
   local container
   container="$(docker ps -a -f status=running | sed -e '1d' | fzf --height 40% --reverse | awk '{print $1}')"
   if [ -n "${container}" ]; then
@@ -63,3 +66,5 @@ echo "${fg_bold[red]}| |____| | | | |    | |/ /   | | | \ \  | |      \ \  / /  
 echo "${fg_bold[red]}|  ____| | | | |    |   |    | | | |\ \ | |       \ \/ /   | | | |\ \ / /| |${reset_color}"
 echo "${fg_bold[red]}| |    | |_| | |___ | |\ \   | | | | \ \| |        \  /    | | | | \   / | |${reset_color}"
 echo "${fg_bold[red]}|_|     \___/ \____||_| \_\  |_| |_|  \ __|         \/     |_| |_|  \_/  |_|${reset_color}"
+
+[[ -s "/Users/yusukeohno/.gvm/scripts/gvm" ]] && source "/Users/yusukeohno/.gvm/scripts/gvm"

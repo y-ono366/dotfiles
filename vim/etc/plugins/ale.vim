@@ -19,7 +19,7 @@ let g:ale_linters = {
 \ 'javascript': ['eslint'],
 \ 'typescript': ['eslint','tsserver'],
 \ 'vue'       : ['eslint'],
-\ 'go'        : ['govet','golint'],
+\ 'go'        : ['gopls'],
 \ }
 
 let g:ale_fixers = {
