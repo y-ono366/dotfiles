@@ -1,6 +1,7 @@
 let setFiletypes = {
     \ 'go'  : {'noexpandtab':'','tabstop':'4','shiftwidth':'4'},
     \ 'js'  : {'tabstop':'2','shiftwidth':'2'},
+    \ 'ts'  : {'tabstop':'2','shiftwidth':'2'},
     \ 'vue' : {'tabstop':'2','shiftwidth':'2'},
     \ 'vim' : {'tabstop':'2','shiftwidth':'2'},
     \ 'tmpl': {'filetype':'html'},
