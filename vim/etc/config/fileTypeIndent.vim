@@ -4,6 +4,8 @@ let setFiletypes = {
     \ 'ts'  : {'tabstop':'2','shiftwidth':'2'},
     \ 'vue' : {'tabstop':'2','shiftwidth':'2'},
     \ 'vim' : {'tabstop':'2','shiftwidth':'2'},
+    \ 'pug' : {'tabstop':'2','shiftwidth':'2'},
+    \ 'scss' : {'tabstop':'2','shiftwidth':'2'},
     \ 'tmpl': {'filetype':'html'},
     \ 'tsx' : {'filetype':'typescript.tsx'},
     \ 'vert' : {'filetype':'glsl'},
