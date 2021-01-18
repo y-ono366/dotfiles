@@ -1,0 +1,4 @@
+:source ~/dotfiles/vim/etc/config/base.vim
+:source ~/dotfiles/vim/etc/config/alias.vim
+:source ~/dotfiles/vim/etc/config/keymaps.vim
+:source ~/dotfiles/vim/etc/config/fileTypeIndent.vim
