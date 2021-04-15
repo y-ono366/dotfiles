@@ -62,3 +62,8 @@ on_cmd = ['TableModeEnable']
 [[plugins]]
 repo = 'tikhomirov/vim-glsl'
 on_ft = ['glsl']
+
+[[plugins]]
+repo  = 'phpactor/phpactor'
+on_ft = ['php']
+build = 'composer install'

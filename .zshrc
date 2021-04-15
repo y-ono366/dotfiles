@@ -1,5 +1,10 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:./node_modules/.bin
+export PATH=/usr/local/Cellar/php@7.4/7.4.13_1/bin:$PATH
+export PATH=$HOME/.composer/vendor/bin:$PATH
+export ANDROID_SDK=$HOME/Library/Android/sdk
+export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
+
 
 # Alias設定
 alias ll='ls -lah'

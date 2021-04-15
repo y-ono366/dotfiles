@@ -1,5 +1,6 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:./node_modules/.bin
+export PATH=/usr/local/Cellar/php@7.4/7.4.13_1/bin:$PATH
 
 # Alias設定
 alias ll='ls -lah'

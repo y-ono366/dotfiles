@@ -1,5 +1,6 @@
 let setFiletypes = {
     \ 'go'  : {'noexpandtab':'','tabstop':'4','shiftwidth':'4'},
+    \ 'php'  : {'tabstop':'4','shiftwidth':'4','autoindent':''},
     \ 'js'  : {'tabstop':'2','shiftwidth':'2'},
     \ 'ts'  : {'tabstop':'2','shiftwidth':'2'},
     \ 'vue' : {'tabstop':'2','shiftwidth':'2'},

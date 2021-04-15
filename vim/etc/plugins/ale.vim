@@ -18,6 +18,7 @@ let g:ale_php_phpstan_use_global = 1
 let g:ale_linters = {
 \ 'javascript': ['eslint'],
 \ 'typescript': ['eslint','tsserver'],
+\ 'typescript.tsx': ['eslint','tsserver'],
 \ 'vue'       : ['vls','eslint'],
 \ 'go'        : ['gopls'],
 \ }
@@ -25,6 +26,7 @@ let g:ale_linters = {
 let g:ale_fixers = {
 \   'javascript': ['prettier'],
 \   'typescript': ['prettier'],
+\   'typescript.tsx': ['prettier'],
 \   'vue'       : ['prettier'],
 \   'go'        : ['gofmt'],
 \   'json'      : ['prettier'],

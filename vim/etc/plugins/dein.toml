@@ -57,3 +57,6 @@ repo = 'honza/vim-snippets'
 
 [[plugins]]
 repo = 'digitaltoad/vim-pug'
+
+[[plugins]]
+repo = 'jparise/vim-graphql'
