@@ -13,8 +13,8 @@ repo = 'y-ono366/twitvim'
 repo = 'w0rp/ale'
 
 ### マルチカーソル
-[[plugins]]
-repo = 'terryma/vim-multiple-cursors'
+# [[plugins]]
+# repo = 'terryma/vim-multiple-cursors'
 
 [[plugins]]
 repo = 'tmhedberg/matchit'
@@ -55,8 +55,8 @@ repo = 'SirVer/ultisnips'
 [[plugins]]
 repo = 'honza/vim-snippets'
 
-[[plugins]]
-repo = 'digitaltoad/vim-pug'
+# [[plugins]]
+# repo = 'digitaltoad/vim-pug'
 
 [[plugins]]
 repo = 'jparise/vim-graphql'
