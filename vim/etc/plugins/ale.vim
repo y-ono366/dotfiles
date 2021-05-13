@@ -7,13 +7,17 @@ let g:ale_set_quickfix = 1
 let g:ale_open_list = 1
 let g:ale_keep_list_window_open = 0
 
-let g:ale_lint_on_text_changed = 0
+let g:ale_lint_on_text_changed = get(g:, 'ale_lint_on_text_changed', 'never')
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_enter = 0
+let g:ale_echo_cursor = get(g:, 'ale_echo_cursor', 0)
+let g:ale_virtualtext_cursor = get(g:, 'ale_virtualtext_cursor', 0)
 "
 let g:ale_fix_on_save = 1
+let g:ale_floating_preview = 0
+let g:ale_lsp_suggestions = 1
 let g:ale_javascript_prettier_use_local_config = 1
-let g:ale_php_phpstan_use_global = 1
+" let g:ale_php_phpstan_use_global = 1
 
 let g:ale_linters = {
 \ 'javascript': ['eslint'],
@@ -30,7 +34,6 @@ let g:ale_fixers = {
 \   'vue'       : ['prettier'],
 \   'go'        : ['gofmt'],
 \   'json'      : ['prettier'],
-\   'php'       : ['php_cs_fixer'],
 \}
 
 " function! LinterStatus() abort
