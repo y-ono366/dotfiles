@@ -23,6 +23,7 @@ alias vim='vim -v'
 # alias vim='gvim --remote-tab-silent'
 alias t-kill='tmux kill-server'
 alias ide='tmux split-window -h -p 85 && tmux split-window -v -p 15'
+alias awsp="source _awsp"
 # java9以降読み込めないclassが存在するらしい
 # export JAVA_TOOL_OPTIONS="--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED"
 

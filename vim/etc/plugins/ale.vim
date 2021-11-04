@@ -25,6 +25,7 @@ let g:ale_linters = {
 \ 'typescript.tsx': ['eslint','tsserver'],
 \ 'vue'       : ['vls','eslint'],
 \ 'go'        : ['gopls'],
+\ 'ruby'      : ['rubocop'],
 \ }
 
 let g:ale_fixers = {
@@ -34,6 +35,7 @@ let g:ale_fixers = {
 \   'vue'       : ['prettier'],
 \   'go'        : ['gofmt'],
 \   'json'      : ['prettier'],
+\   'ruby'      : ['rubocop'],
 \}
 
 " function! LinterStatus() abort

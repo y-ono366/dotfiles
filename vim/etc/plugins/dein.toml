@@ -60,3 +60,6 @@ repo = 'honza/vim-snippets'
 
 [[plugins]]
 repo = 'jparise/vim-graphql'
+
+[[plugins]]
+repo = 'github/copilot.vim'
