@@ -63,6 +63,10 @@ on_cmd = ['TableModeEnable']
 repo = 'tikhomirov/vim-glsl'
 on_ft = ['glsl']
 
+[[plugins]]
+repo = 'jparise/vim-graphql'
+on_ft = ['graphql']
+
 ## [[plugins]]
 ## repo  = 'phpactor/phpactor'
 ## on_ft = ['php']
