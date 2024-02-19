@@ -28,9 +28,6 @@ build = './install --all'
 [[plugins]]
 repo = 'junegunn/fzf.vim'
 
-[[plugins]]
-repo= 'vim-jp/vimdoc-ja'
-
 
 [[plugins]]
 repo = 'tpope/vim-surround'
@@ -40,20 +37,11 @@ repo = 'tpope/vim-surround'
 repo = 'tomtom/tcomment_vim'
 
 [[plugins]]
-repo= 'easymotion/vim-easymotion'
-
-[[plugins]]
 repo = 'gregsexton/gitv'
 
 ### git command
 [[plugins]]
 repo = 'tpope/vim-fugitive'
-
-[[plugins]]
-repo = 'SirVer/ultisnips'
-
-[[plugins]]
-repo = 'honza/vim-snippets'
 
 [[plugins]]
 repo = 'github/copilot.vim'

@@ -28,3 +28,9 @@
     sh      = stash
     pp      = stash pop
     aliases = config --get-regexp alias
+[url "https://conciergeu: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@github.com"]
+	insteadOf = https://github.com
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false

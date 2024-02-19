@@ -71,3 +71,5 @@ echo "${fg_bold[red]}| |    | |_| | |___ | |\ \   | | | | \ \| |        \  /    
 echo "${fg_bold[red]}|_|     \___/ \____||_| \_\  |_| |_|  \ __|         \/     |_| |_|  \_/  |_|${reset_color}"
 
 [[ -s "/Users/yusukeohno/.gvm/scripts/gvm" ]] && source "/Users/yusukeohno/.gvm/scripts/gvm"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
