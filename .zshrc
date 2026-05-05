@@ -23,6 +23,12 @@ alias vim='vim -v'
 # alias vim='gvim --remote-tab-silent'
 alias t-kill='tmux kill-server'
 alias ide='tmux split-window -h -p 85 && tmux split-window -v -p 15'
+
+# tmux セッション操作（引数省略時は claude）
+tc()  { tmux new-session -A -s "${1:-claude}"; }   # 作成 or 既存にアタッチ
+tca() { tmux attach -t "${1:-claude}"; }           # アタッチのみ
+tck() { tmux kill-session -t "${1:-claude}"; }     # 指定セッション終了
+alias tcl='tmux ls'                                # セッション一覧
 alias awsp="source _awsp"
 # java9以降読み込めないclassが存在するらしい
 # export JAVA_TOOL_OPTIONS="--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED"
@@ -35,3 +41,6 @@ export NVM_DIR="$HOME/.nvm"
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# OpenClaw Completion
+source "/Users/claudecode/.openclaw/completions/openclaw.zsh"
