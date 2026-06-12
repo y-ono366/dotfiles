@@ -1,11 +1,11 @@
-let g:lsp_diagnostics_enabled = 0
+let g:lsp_diagnostics_enabled = 1
 
 " debug
 " let g:lsp_log_verbose = 1
 " let g:lsp_log_file = expand('~/.cache/vim-lsp.log')
 " let g:asyncomplete_log_file = expand('~/.cache/asyncomplete.log')
 let g:lsp_log_file = ''
-let g:lsp_log_verbose = 1
+let g:lsp_log_verbose = 0
 
 if executable('gopls')
   augroup LspGo
@@ -54,17 +54,23 @@ if executable('vls')
   augroup end
 endif
 
+" TS LSP は .ts を開くたびに tsserver(~500MB)を起動してもっさりするので
+" 既定では自動起動しない。型補完が欲しいセッションだけ :TsLsp で手動ON。
 if executable('typescript-language-server')
+    function! s:SetupTsLsp() abort
+        call lsp#register_server({
+                    \ 'name': 'typescript-language-server',
+                    \ 'cmd': {server_info->['typescript-language-server', '--stdio']},
+                    \ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'tsconfig.json'))},
+                    \ 'allowlist': ['typescript','typescript.tsx'],
+                    \ })
+    endfunction
+    " このセッション限定で TS LSP を起動（カレントバッファに適用）
+    command! TsLsp call s:SetupTsLsp() | call lsp#activate() | echomsg 'TS LSP enabled for this session'
     augroup LspTypeScript
         au!
-        autocmd User lsp_setup call lsp#register_server({
-                    \ 'name': 'typescript-language-server',
-                    \ 'cmd': {server_info->[&shell, &shellcmdflag, 'typescript-language-server --stdio']},
-                    \ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'tsconfig.json'))},
-                    \ 'whitelist': ['typescript','typescript.tsx'],
-                    \ })
         autocmd FileType typescript setlocal omnifunc=lsp#complete
-    augroup END :echomsg "vim-lsp with `typescript-language-server` enabled"
+    augroup END
 else
     :echomsg "vim-lsp for typescript unavailable"
 endif

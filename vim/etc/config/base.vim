@@ -20,8 +20,10 @@ set guioptions-=l
 set guioptions-=L
 " 現在の行を強調表示
 set cursorline
-" 現在の行を強調表示（縦）
-set cursorcolumn
+" 現在の行を強調表示（縦）→ カーソル移動毎に全画面再描画で重いのでOFF
+" set cursorcolumn
+" 長い行のシンタックスハイライト上限（生成コード・minified対策）
+set synmaxcol=300
 " 行末の1文字先までカーソルを移動できるように
 set virtualedit=onemore
 " インデントはスマートインデント

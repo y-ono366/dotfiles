@@ -21,8 +21,8 @@ let g:ale_javascript_prettier_use_local_config = 1
 
 let g:ale_linters = {
 \ 'javascript': ['eslint'],
-\ 'typescript': ['eslint','tsserver'],
-\ 'typescript.tsx': ['eslint','tsserver'],
+\ 'typescript': ['eslint'],
+\ 'typescript.tsx': ['eslint'],
 \ 'vue'       : ['vls','eslint'],
 \ 'go'        : ['gopls'],
 \ 'ruby'      : ['rubocop'],
