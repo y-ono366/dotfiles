@@ -36,6 +36,13 @@ alias t-kill='tmux kill-server'
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+# fzf 関数群 (fbr/fbrm/fmgn/fd/fda/fdocup/fdocdown)
+# シンボリックリンク済みなら $HOME、未リンクならリポジトリ内を読む
+for _fzf_rc in "$HOME/.shell_fzf" "$HOME/dotfiles/.shell_fzf"; do
+  if [ -f "$_fzf_rc" ]; then . "$_fzf_rc"; break; fi
+done
+unset _fzf_rc
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

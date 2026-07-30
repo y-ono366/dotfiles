@@ -46,6 +46,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# fzf 関数群 (fbr/fbrm/fmgn/fd/fda/fdocup/fdocdown)
+# シンボリックリンク済みなら $HOME、未リンクならリポジトリ内を読む
+for _fzf_rc in "$HOME/.shell_fzf" "$HOME/dotfiles/.shell_fzf"; do
+  if [ -f "$_fzf_rc" ]; then . "$_fzf_rc"; break; fi
+done
+unset _fzf_rc
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 command -v pyenv >/dev/null && eval "$(pyenv init -)"
