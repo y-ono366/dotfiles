@@ -63,16 +63,6 @@ function fdocdwn() {
   fi
 }
 ##########################################################
-# バナーは対話シェルのみ。非対話 (ssh host 'cmd' 等) で出すと出力を汚染する
-if [[ -o interactive ]]; then
-  autoload -U colors && colors
-  echo "${fg_bold[red]} ______ _   _   ___  _   _    _   _      _   _  __      __  _   __       __ ${reset_color}"
-  echo "${fg_bold[red]}|  ____| | | |/ ___|| | / /  | | |  \   | | |/  \ \    / / | | |  \     /  |${reset_color}"
-  echo "${fg_bold[red]}| |____| | | | |    | |/ /   | | | \ \  | |      \ \  / /  | | | \ \   /   |${reset_color}"
-  echo "${fg_bold[red]}|  ____| | | | |    |   |    | | | |\ \ | |       \ \/ /   | | | |\ \ / /| |${reset_color}"
-  echo "${fg_bold[red]}| |    | |_| | |___ | |\ \   | | | | \ \| |        \  /    | | | | \   / | |${reset_color}"
-  echo "${fg_bold[red]}|_|     \___/ \____||_| \_\  |_| |_|  \ __|         \/     |_| |_|  \_/  |_|${reset_color}"
-fi
 
 [[ -s "/Users/yusukeohno/.gvm/scripts/gvm" ]] && source "/Users/yusukeohno/.gvm/scripts/gvm"
 
