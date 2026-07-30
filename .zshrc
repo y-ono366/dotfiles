@@ -1,14 +1,22 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:./node_modules/.bin
-export PATH=/usr/local/Cellar/php@7.4/7.4.13_1/bin:$PATH
-export PATH=$HOME/.composer/vendor/bin:$PATH
-export ANDROID_SDK=$HOME/Library/Android/sdk
-export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
+# macOS 専用パス (Homebrew PHP / composer / Android SDK)
+if [[ "$OSTYPE" == darwin* ]]; then
+  export PATH=/usr/local/Cellar/php@7.4/7.4.13_1/bin:$PATH
+  export PATH=$HOME/.composer/vendor/bin:$PATH
+  export ANDROID_SDK=$HOME/Library/Android/sdk
+  export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
+fi
 
 
 # Alias設定
 alias ll='ls -lah'
-alias ls='ls -G'
+# -G は BSD ls では色付け、GNU ls ではグループ列の抑制と意味が違う
+if [[ "$OSTYPE" == darwin* ]]; then
+  alias ls='ls -G'
+else
+  alias ls='ls --color=auto'
+fi
 alias twl='tw -tl -id'
 alias tw='tw -id'
 alias doc='docker'
@@ -40,7 +48,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+command -v pyenv >/dev/null && eval "$(pyenv init -)"
 
 # OpenClaw Completion
-source "/Users/claudecode/.openclaw/completions/openclaw.zsh"
+[ -f "/Users/claudecode/.openclaw/completions/openclaw.zsh" ] && \
+  source "/Users/claudecode/.openclaw/completions/openclaw.zsh"
