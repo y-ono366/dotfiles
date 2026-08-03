@@ -53,3 +53,4 @@ command -v pyenv >/dev/null && eval "$(pyenv init -)"
 # OpenClaw Completion
 [ -f "/Users/claudecode/.openclaw/completions/openclaw.zsh" ] && \
   source "/Users/claudecode/.openclaw/completions/openclaw.zsh"
+export PATH="$HOME/.local/bin:$PATH"
