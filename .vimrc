@@ -21,6 +21,9 @@ autocmd vimenter * syntax on
   let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
   call dein#load_toml(s:toml,      {'lazy': 0})
   call dein#load_toml(s:lazy_toml, {'lazy': 1})
+  " dein#end() が無いと遅延プラグインの on_cmd / on_ft フックが登録されず、
+  " dein_lazy.toml の :Copilot などのコマンドが生成されない
+  call dein#end()
 if dein#check_install()
   call dein#install()
 endif

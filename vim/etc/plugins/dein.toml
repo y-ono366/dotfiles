@@ -43,5 +43,4 @@ repo = 'gregsexton/gitv'
 [[plugins]]
 repo = 'tpope/vim-fugitive'
 
-[[plugins]]
-repo = 'github/copilot.vim'
+### copilot.vim は dein_lazy.toml へ移動（LSPが起動ごとに常駐して800MB超を消費するため）

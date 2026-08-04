@@ -67,6 +67,11 @@ on_ft = ['glsl']
 repo = 'jparise/vim-graphql'
 on_ft = ['graphql']
 
+### copilot: :Copilot / <Leader>tj を叩くまでLSPを起動しない
+[[plugins]]
+repo = 'github/copilot.vim'
+on_cmd = ['Copilot']
+
 ## [[plugins]]
 ## repo  = 'phpactor/phpactor'
 ## on_ft = ['php']
