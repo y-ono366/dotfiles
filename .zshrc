@@ -54,3 +54,34 @@ command -v pyenv >/dev/null && eval "$(pyenv init -)"
 [ -f "/Users/claudecode/.openclaw/completions/openclaw.zsh" ] && \
   source "/Users/claudecode/.openclaw/completions/openclaw.zsh"
 export PATH="$HOME/.local/bin:$PATH"
+
+# tmux: 4分割して各環境へssh（左上→右上→右下→左下）
+_work_layout() {
+  local w=$1
+  tmux split-window -h -t "$w"
+  tmux split-window -v -t "$w"
+  tmux select-pane -t "$w.0"
+  tmux split-window -v -t "$w"
+  tmux select-layout -t "$w" tiled
+  tmux send-keys -t "$w.0" 'ssh macmini'  C-m 'tc'    C-m   # 左上
+  tmux send-keys -t "$w.1" 'ssh kubell'   C-m 'tc'    C-m   # 右上
+  tmux send-keys -t "$w.2" 'ssh macmini'  C-m 'codex' C-m   # 右下
+  tmux send-keys -t "$w.3" 'ssh page-dev' C-m 'tc'    C-m   # 左下
+  tmux select-pane -t "$w.0"
+}
+# tmux内で: 新しいウィンドウに構築
+work() {
+  tmux new-window -n work
+  _work_layout "work"
+}
+# tmux外で: セッション work を作って構築→アタッチ（既にあればアタッチだけ）
+workup() {
+  if [ -n "$TMUX" ]; then work; return; fi
+  if ! tmux has-session -t work 2>/dev/null; then
+    tmux new-session -d -s work -n work
+    _work_layout "work:work"
+  fi
+  tmux attach -t work
+}
+# work セッションを完全終了（全ペイン閉鎖→sshも切断）
+workdown() { tmux kill-session -t work; }
