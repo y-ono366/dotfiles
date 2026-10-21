@@ -65,7 +65,7 @@ _work_layout() {
   tmux select-layout -t "$w" tiled
   tmux send-keys -t "$w.0" 'ssh macmini'  C-m 'tc'    C-m   # 左上
   tmux send-keys -t "$w.1" 'ssh kubell'   C-m 'tc'    C-m   # 右上
-  tmux send-keys -t "$w.2" 'ssh macmini'  C-m 'codex' C-m   # 右下
+  tmux send-keys -t "$w.2" 'ssh macmini'  C-m 'codex agents' C-m   # 右下
   tmux send-keys -t "$w.3" 'ssh page-dev' C-m 'tc'    C-m   # 左下
   tmux select-pane -t "$w.0"
 }
