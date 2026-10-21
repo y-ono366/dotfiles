@@ -55,6 +55,21 @@ command -v pyenv >/dev/null && eval "$(pyenv init -)"
   source "/Users/claudecode/.openclaw/completions/openclaw.zsh"
 export PATH="$HOME/.local/bin:$PATH"
 
+# ---- trzsz (trz/tsz: tmux 対応のファイル送受信) ----
+# 未導入なら dotfiles のスクリプトで自動インストール（失敗したら 24h は再試行しない）
+(( $+commands[trz] )) || [[ ! -x ~/dotfiles/scripts/install-trzsz.sh ]] || ~/dotfiles/scripts/install-trzsz.sh --auto
+# 設定ファイルの symlink（setup.sh を再実行していないホスト向け）
+[[ -e ~/.trzsz.conf ]] || ln -s ~/dotfiles/.trzsz.conf ~/.trzsz.conf 2>/dev/null
+# 手元の Mac（ssh 経由でない）かつ対話 TTY のときだけ ssh を trzsz で包む。-d で Finder からの D&D 送信も有効。
+# リダイレクトや scp/git 経由の ssh は素のまま。踏み台から先で使うなら手動で `trzsz --relay ssh`。
+ssh() {
+  if [[ -z "$SSH_CONNECTION" && -t 0 && -t 1 ]] && (( $+commands[trzsz] )); then
+    trzsz -d ssh "$@"    # trzsz は外部プロセスなので PATH 上の /usr/bin/ssh が呼ばれる
+  else
+    command ssh "$@"
+  fi
+}
+
 # tmux: 4分割して各環境へssh（左上→右上→右下→左下）
 _work_layout() {
   local w=$1
